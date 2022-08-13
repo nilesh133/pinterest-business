@@ -405,6 +405,10 @@
     height: 729px;
 }
 
+.hpw_secondvideo_video video::-webkit-media-controls{
+    display: none;
+}
+
 .hpw_rightaudience{
     margin-top: 12rem;
     display: flex;
