@@ -1,0 +1,754 @@
+.hpw_combinationOne{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+    transition: all 0.5s;
+}
+
+.hpw_combinationTwo{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+    transition: all 0.5s;
+}
+
+.hpw_combinationThree{
+    background-color: rgb(202, 235, 253);
+    color: rgb(0, 70, 83);
+    transition: all 0.5s;
+}
+
+.hpw_combinationFour{
+    background-color: rgb(255, 161, 110);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.hpw_navbar_combinationOne{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_navbar_combinationTwo{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar_combinationThree{
+    background-color: rgb(202, 235, 253);
+    color: rgb(0, 70, 83);
+}
+
+.hpw_navbar_combinationFour{
+    background-color: rgb(255, 161, 110);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar_combinationOne:hover{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar_combinationTwo:hover{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_navbar_combinationThree:hover{
+    background-color: rgb(0, 70, 83);
+    color: rgb(202, 235, 253);
+}
+
+.hpw_navbar_combinationFour:hover{
+    background-color: rgb(17, 46, 59);
+    color: rgb(255, 161, 110);
+}
+
+.hpw_navbar_logo{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.hpw_navbar_items{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.hpw_navbar_items p{
+    margin: 0;
+    margin-right: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hpw_navbar_login{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 1.3rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.hpw_navbar_login_combinationOne{
+    border: 2px solid rgb(250, 237, 162);
+}
+
+.hpw_navbar_login_combinationTwo{
+    border: 2px solid rgb(17, 46, 59);
+}
+
+.hpw_navbar_login_combinationThree{
+    border: 2px solid rgb(0, 70, 83);
+}
+
+.hpw_navbar_login_combinationFour{
+    border: 2px solid rgb(17, 46, 59);
+}
+
+.hpw_navbar:hover .hpw_navbar_login_combinationOne{
+    color: rgb(17, 46, 59);
+    border: 2px solid rgb(17, 46, 59);
+}
+
+.hpw_navbar:hover .hpw_navbar_login_combinationTwo{
+    color: rgb(250, 237, 162);
+    border: 2px solid rgb(250, 237, 162);
+}
+
+.hpw_navbar:hover .hpw_navbar_login_combinationThree{
+    color: rgb(202, 235, 253);
+    border: 2px solid rgb(202, 235, 253);
+}
+
+.hpw_navbar:hover .hpw_navbar_login_combinationFour{
+    border: 2px solid rgb(255, 161, 110);
+    color: rgb(255, 161, 110);;
+}
+
+.hpw_navbar_signup{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 0.6rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.hpw_navbar_signup_combinationOne{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar_signup_combinationTwo{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_navbar_signup_combinationThree{
+    background-color: rgb(0, 70, 83);
+    color: rgb(202, 235, 253);
+}
+
+.hpw_navbar_signup_combinationFour{
+    background-color: rgb(17, 46, 59);
+    color: rgb(255, 161, 110);
+}
+
+.hpw_navbar:hover .hpw_navbar_signup_combinationOne{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_navbar:hover .hpw_navbar_signup_combinationTwo{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar:hover .hpw_navbar_signup_combinationThree{
+    background-color: rgb(202, 235, 253);
+    color: rgb(0, 70, 83);
+}
+
+.hpw_navbar:hover .hpw_navbar_signup_combinationFour{
+    background-color: rgb(255, 161, 110);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar_dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.hpw_navbar_dropbtn:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+  
+.hpw_navbar_dropdown {
+    display: inline-block;
+}
+  
+.hpw_navbar_dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: 43%;
+    padding-bottom: 2rem;
+}
+
+.hpw_navbar_dropdown_content_combinationOne{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_navbar_dropdown_content_combinationTwo{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_navbar_dropdown_content_combinationThree{
+    background-color: rgb(0, 70, 83);
+    color: rgb(202, 235, 253);
+}
+
+.hpw_navbar_dropdown_content_combinationFour{
+    background-color: rgb(17, 46, 59);
+    color: rgb(255, 161, 110);
+}
+
+.hpw_navbar_dropdown_content p {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 5px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    padding: 1rem 0;
+}
+  
+.hpw_navbar_dropdown_content p:hover {
+    text-decoration: underline;
+}
+  
+.hpw_navbar_dropdown:hover .hpw_navbar_dropdown_content {
+    display: block;
+}
+
+.hpw_hero{
+    margin-top: 14rem;
+    display: flex;
+}
+
+.hpw_hero_images{
+    display: flex;
+}
+
+.hpw_hero_images_leftcol{
+    display: flex;
+    flex-direction: column;
+    margin-left: -4rem;
+}
+
+.hpw_hero_images_rightcol{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+}
+
+.hpw_hero_content{
+    margin-left: 8rem;
+    margin-top: -6rem;
+}
+
+.hpw_hero_content h1{
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hpw_hero_content p{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hpw_hero_button{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 800;
+    border: 2px solid rgb(250, 237, 162);
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.hpw_hero_button:hover{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_howitworks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 11rem;
+}
+
+.hpw_howitworks h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.hpw_howitworks_para{
+    margin: 0.8rem 0;
+}
+
+.hpw_howitworks_para p{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.hpw_firstvideo{
+    width: 100%;
+    margin-top: 12rem;
+}
+
+.hpw_firstvideo video{
+    width: 100%;
+}
+
+.hpw_firstvideo video::-webkit-media-controls{
+    display: none;
+}
+
+.hpw_pin{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hpw_pin h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.hpw_pin p{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.hpw_secondvideo{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 12rem;
+}
+
+.hpw_secondvideo_accordion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hpw_secondvideo_accordion_content{
+    width: 70%;
+    margin-left: 4.5rem;
+}
+
+.hpw_secondvideo_accordion_content h1{
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
+
+.hpw_secondvideo_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hpw_secondvideo_video video{
+    width: 410px;
+    height: 729px;
+}
+
+.hpw_rightaudience{
+    margin-top: 12rem;
+    display: flex;
+}
+
+.hpw_rightaudience_left{
+    width: 50%;
+    position: relative;
+}
+
+.hpw_rightaudience_left_image{
+    background-image: url("../../images//right-audience.png");
+    background-position: center;
+    background-size: cover;
+    width: 410px;
+    height: 410px;
+    border-radius: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.hpw_rightaudience_left_card{
+    position: absolute;
+    top: 64%;
+    left: 45%;
+    padding: 4rem 1.5rem;
+    border-radius: 1.2rem;
+}
+
+.hpw_rightaudience_left_card_combinationFour{
+    background-color: rgb(17, 46, 59);
+    color: rgb(255, 161, 110);
+}
+
+.hpw_rightaudience_left_card_combinationTwo{
+    background-color: rgb(235, 219, 128);
+    color: rgb(17, 46, 59);
+}
+
+.hpw_rightaudience_left_card h1{
+    margin: 0;
+    font-size: 45px;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.hpw_rightaudience_left_card p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hpw_rightaudience_right{
+    width: 50%;
+    margin-top: 6rem;
+}
+
+.hpw_rightaudience_right h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hpw_rightaudience_right_para{
+    margin: 1rem 0;
+}
+
+.hpw_rightaudience_right_para p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hpw_rightaudience_right_button{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 800;
+    border: 2px solid rgb(17, 46, 59);
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.hpw_rightaudience_right_button:hover{
+    background-color: rgb(17, 46, 59);
+    color: rgb(255, 161, 110);
+}
+
+.hpw_fitin{
+    margin-top: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hpw_fitin h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.hpw_fitin_para{
+    margin: 1rem 0;
+}
+
+.hpw_fitin_para p{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.hpw_fitin_button{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 8rem;
+    font-weight: 800;
+    border: 2px solid rgb(17, 46, 59);
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.hpw_fitin_button:hover{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_brands{
+    margin-top: 12rem
+}
+
+.hpw_brands h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.hpw_brands_content_container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.hpw_brands_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hpw_brands_content img{
+    width: 464px;
+    height: 355px;
+    object-fit: cover;
+}
+
+.hpw_brands_content h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.hpw_brands_content_para p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+.hpw_brands_content_button{
+    font-size: 0.9rem;
+    padding: 1.2rem;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 800;
+    border: 2px solid rgb(17, 46, 59);
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.hpw_brands_content_button:hover{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+}
+
+.hpw_questions{
+    margin-top: 12rem;
+}
+
+.hpw_questions h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.hpw_questions_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    margin: 0 8rem;
+}
+
+.hpw_question{
+    width: 420px;
+    height: 280px;
+    padding: 3rem 1rem;
+}
+
+.hpw_question h2{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.hpw_question p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hpw_question span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hpw_getstarted{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hpw_getstarted h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hpw_getstarted_button{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    font-weight: 800;
+    border: 2px solid rgb(17, 46, 59);
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+}
+
+.hpw_footer{
+    background-color: rgb(17, 46, 59);
+    color: rgb(250, 237, 162);
+    padding: 2rem 8rem 3rem 8rem;
+    margin-top: 9rem;
+}
+
+.hpw_footer_collapse{
+    color: rgb(250, 237, 162);
+    border-bottom: 0.2px solid rgb(250, 237, 162);
+    margin-bottom: 2rem;
+}
+
+.hpw_footer_collapse_contentcontainer{
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.hpw_footer_collapse_content{
+    margin-right: 3rem;
+}
+
+.hpw_footer_collapse_content span{
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    color: rgb(250, 237, 162);
+    border: 1px solid rgb(250, 237, 162);
+}
+
+.hpw_footer_collapse_content p{
+    margin: 0;
+    color: rgb(250, 237, 162);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.hpw_footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hpw_footer_bottom_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hpw_footer_bottom_left select{
+    padding: 1rem;
+    width: 250px;
+    border: 1px solid rgb(250, 237, 162);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(250, 237, 162);
+    margin: 4rem 0;
+    cursor: pointer;
+}
+
+.hpw_footer_bottom_left span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hpw_footer_bottom_right{
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.hpw_footer_bottom_right_column{
+    padding: 2rem;
+}
+
+.hpw_footer_bottom_right_column ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hpw_footer_bottom_right_column ul li{
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}

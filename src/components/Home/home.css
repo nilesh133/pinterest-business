@@ -1,28 +1,32 @@
 .combinationOne{
     background-color: #00422C;
     color: #CDF9CD;
+    transition: all 0.5s;
 }
 
 .combinationTwo{
     background-color: #FFFEDB;
     color: #00422C;
+    transition: all 0.5s;
 }
 
 .combinationThree{
     background-color: #FFE376;
     color: #00422C;
+    transition: all 0.5s;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.1rem 3rem;
+    padding: 0.8rem 3rem;
     position: sticky;
     top: 0;
     left: 0;
     /* background-color: transparent; */
     z-index: 100;
+    transition: all 0.5s;
 }
 
 .navbar_combinationOne{
