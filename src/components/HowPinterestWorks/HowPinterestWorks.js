@@ -12,7 +12,7 @@ import brand_and_creator_2 from "../../images/brands-and-creators/brand-and-crea
 
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
-import { AiOutlinePlus } from "react-icons/ai"
+// import { AiOutlinePlus } from "react-icons/ai"
 
 const HowPinterestWorks = () => {
     const navigate = useNavigate();
@@ -144,12 +144,12 @@ const HowPinterestWorks = () => {
                         <h1>A guide to thee</h1>
                         <h1>perfect find</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
-                            <Collapse title="Browsing for inspiration" arrowIcon={<AiOutlinePlus />}>
+                            <Collapse title="Browsing for inspiration">
                                 <Text style={{ color: "rgb(0, 70, 83)" }}>
                                     As people scroll, they gather ideas for what to try next. The more they use Pinterest, the better their personalised recommendations become.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Learning new skills" expanded arrowIcon={<AiOutlinePlus />}>
+                            <Collapse title="Learning new skills" expanded>
                                 <Text style={{ color: "rgb(0, 70, 83)" }}>
                                     Some Pins contain videos or tutorials to teach new skills and activities. From recipes to DIY projects to workouts, people love seeing creative ideas and tips.
                                 </Text>
@@ -273,7 +273,7 @@ const HowPinterestWorks = () => {
             <div className="hpw_footer">
                 <div className="hpw_footer_collapse">
                     <Collapse.Group>
-                        <Collapse title="Footnotes" arrowIcon={<AiOutlinePlus />} style={{ color: "rgb(250, 237, 162)" }}>
+                        <Collapse title="Footnotes" style={{ color: "rgb(250, 237, 162)" }}>
                             <div className="hpw_footer_collapse_contentcontainer">
                                 <div className="hpw_footer_collapse_content">
                                     <span>1</span>
