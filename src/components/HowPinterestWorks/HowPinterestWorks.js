@@ -10,13 +10,6 @@ import right_audience from "../../images/right-audience.png"
 import brand_and_creator_1 from "../../images/brands-and-creators/brand-and-creators-1.png"
 import brand_and_creator_2 from "../../images/brands-and-creators/brand-and-creators-2.png"
 
-// MUI Imports
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
 import { AiOutlinePlus } from "react-icons/ai"
