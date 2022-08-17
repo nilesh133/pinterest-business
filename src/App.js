@@ -25,7 +25,7 @@ function App() {
         <Route path="/create" exact element={<Signup />} />
         <Route path="/how-pinterest-works" exact element={<HowPinterestWorks />} />
         <Route path="/getting-started" exact element={<GettingStarted />} />
-        <Route path="/audience" exact element={<PinterestAudience />} />
+        <Route path="/pinterest-audience" exact element={<PinterestAudience />} />
         <Route path="/success-stories" exact element={<SuccessStories />} />
         <Route path="/creators" exact element={<PinterestCreators />} />
         <Route path="/how-to-make-pins" exact element={<MakingPins />} />

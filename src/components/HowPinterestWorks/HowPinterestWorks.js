@@ -141,7 +141,7 @@ const HowPinterestWorks = () => {
             <div className="hpw_secondvideo">
                 <div className="hpw_secondvideo_accordion">
                     <div className="hpw_secondvideo_accordion_content">
-                        <h1>A guide to thee</h1>
+                        <h1>A guide to the</h1>
                         <h1>perfect find</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
                             <Collapse title="Browsing for inspiration">

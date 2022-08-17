@@ -1,0 +1,259 @@
+.gs_combinationOne{
+    background-color: rgb(86, 128, 255);
+    color: rgb(1, 0, 39);
+    transition: all 0.5s;
+}
+
+.gs_combinationTwo{
+    background-color: rgb(237, 236, 185);
+    color: rgb(45, 85, 255);
+    transition: all 0.5s;
+}
+
+.gs_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.gs_navbar_combinationOne{
+    background-color: rgb(86, 128, 255);
+    color: rgb(1, 0, 39);
+}
+
+.gs_navbar_combinationTwo{
+    background-color: rgb(237, 236, 185);
+    color: rgb(45, 85, 255);
+}
+
+.gs_navbar_combinationOne:hover{
+    background-color: rgb(1, 0, 39);
+    color: rgb(86, 128, 255);
+}
+
+.gs_navbar_combinationTwo:hover{
+    background-color: rgb(45, 85, 255);
+    color: rgb(237, 236, 185);
+}
+
+.gs_navbar_logo{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.gs_navbar_items{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.gs_navbar_items p{
+    margin: 0;
+    margin-right: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.gs_navbar_login{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 1.3rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.gs_navbar_login_combinationOne{
+    border: 2px solid rgb(1, 0, 39);
+}
+
+.gs_navbar_login_combinationTwo{
+    border: 2px solid rgb(45, 85, 255);
+}
+
+.gs_navbar:hover .gs_navbar_login_combinationOne{
+    color: rgb(86, 128, 255);
+    border: 2px solid rgb(86, 128, 255);
+}
+
+.gs_navbar:hover .gs_navbar_login_combinationTwo{
+    color: rgb(237, 236, 185);
+    border: 2px solid rgb(237, 236, 185);
+}
+
+.gs_navbar_signup{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 0.6rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.gs_navbar_signup_combinationOne{
+    background-color: rgb(1, 0, 39);
+    color: rgb(86, 128, 255);
+}
+
+.gs_navbar_signup_combinationTwo{
+    background-color: rgb(45, 85, 255);
+    color: rgb(237, 236, 185);
+}
+
+.gs_navbar:hover .gs_navbar_signup_combinationOne{
+    background-color: rgb(86, 128, 255);
+    color: rgb(1, 0, 39);
+}
+
+.gs_navbar:hover .gs_navbar_signup_combinationTwo{
+    background-color: rgb(237, 236, 185);
+    color: rgb(45, 85, 255);
+}
+
+.gs_navbar_dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.gs_navbar_dropbtn:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+  
+.gs_navbar_dropdown {
+    display: inline-block;
+}
+  
+.gs_navbar_dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: 43%;
+    padding-bottom: 2rem;
+}
+
+.gs_navbar_dropdown_content_combinationOne{
+    background-color: rgb(1, 0, 39);
+    color: rgb(86, 128, 255);
+}
+
+.gs_navbar_dropdown_content_combinationTwo{
+    background-color: rgb(45, 85, 255);
+    color: rgb(237, 236, 185);
+}
+
+.gs_navbar_dropdown_content p {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 5px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    padding: 1rem 0;
+}
+  
+.gs_navbar_dropdown_content p:hover {
+    text-decoration: underline;
+}
+  
+.gs_navbar_dropdown:hover .gs_navbar_dropdown_content {
+    display: block;
+}
+
+.gs_hero{
+    margin-top: 14rem;
+    display: flex;
+    align-items: center;
+}
+
+.gs_hero_images{
+    display: flex;
+}
+
+.gs_hero_images_leftcol{
+    display: flex;
+    flex-direction: column;
+    margin-left: -4rem;
+}
+
+.gs_hero_images_rightcol{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+}
+
+.gs_hero_content{
+    margin-left: 8rem;
+}
+
+.gs_hero_content h1{
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.gs_hero_content p{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.gs_hero_button{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 800;
+    border: 2px solid rgb(250, 237, 162);
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.gs_hero_button:hover{
+    background-color: rgb(250, 237, 162);
+    color: rgb(17, 46, 59);
+}
+
+.gs_business{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 12rem;
+}
+
+.gs_business_accordion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gs_business_accordion_content{
+    width: 70%;
+    margin-left: 4.5rem;
+}
+
+.gs_business_accordion_content h1{
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
