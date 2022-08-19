@@ -16,6 +16,8 @@ import { Collapse, Text } from "@nextui-org/react";
 
 const HowPinterestWorks = () => {
     const navigate = useNavigate();
+    const path = window.location.pathname;
+
     const [combinationNumber, setCombinationNumber] = useState("combinationOne")
 
     const changeCombination = () => {
@@ -54,9 +56,9 @@ const HowPinterestWorks = () => {
                 <div className="hpw_navbar_logo">Business</div>
                 <div className="hpw_navbar_items" >
                     <div class="hpw_navbar_dropdown">
-                        <p className="hpw_navbar_dropbtn">Why pinterest?</p>
+                        <p className={classNames("hpw_navbar_dropbtn", `${path === "/how-pinterest-works" ? "navbar_active" : ""}`)}>Why pinterest?</p>
                         <div className={classNames(`hpw_navbar_dropdown_content_${combinationNumber}`, "hpw_navbar_dropdown_content")}>
-                            <p onClick={() => navigate("/how-pinterest-works")}>How pinterest works</p>
+                            <p onClick={() => navigate("/how-pinterest-works")} className = {path === "/how-pinterest-works" ? "navbar_active" : ""}>How pinterest works</p>
                             <p onClick={() => navigate("/getting-started")}>Getting started</p>
                             <p onClick={() => navigate("/pinterest-audience")}>The Pinterest audience</p>
                             <p onClick={() => navigate("/success-stories")}>Success story</p>

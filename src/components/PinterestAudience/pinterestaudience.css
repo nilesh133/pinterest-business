@@ -26,6 +26,10 @@
     transition: all 0.5s;
 }
 
+.navbar_active{
+    text-decoration: underline !important;
+}
+
 .pa_navbar_combinationOne{
     background-color: rgb(163, 12, 74);
     color: rgb(255, 253, 146);

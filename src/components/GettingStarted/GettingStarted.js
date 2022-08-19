@@ -23,6 +23,7 @@ import { Collapse, Text } from "@nextui-org/react";
 
 const GettingStarted = () => {
     const navigate = useNavigate();
+    const path = window.location.pathname;
 
     const [combinationNumber, setCombinationNumber] = useState("combinationOne");
 
@@ -60,7 +61,7 @@ const GettingStarted = () => {
                 <div className="gs_navbar_logo">Business</div>
                 <div className="gs_navbar_items">
                     <div class="gs_navbar_dropdown">
-                        <p className="gs_navbar_dropbtn">Why pinterest?</p>
+                        <p className={classNames("gs_navbar_dropbtn", `${path === "/getting-started" ? "navbar_active" : ""}`)}>Why pinterest?</p>
                         <div
                             className={classNames(
                                 `gs_navbar_dropdown_content_${combinationNumber}`,
@@ -70,7 +71,7 @@ const GettingStarted = () => {
                             <p onClick={() => navigate("/how-pinterest-works")}>
                                 How pinterest works
                             </p>
-                            <p onClick={() => navigate("/getting-started")}>
+                            <p onClick={() => navigate("/getting-started")} className = {path === "/getting-started" ? "navbar_active" : ""}>
                                 Getting started
                             </p>
                             <p onClick={() => navigate("/pinterest-audience")}>

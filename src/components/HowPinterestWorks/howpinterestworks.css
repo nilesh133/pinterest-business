@@ -33,6 +33,10 @@
     transition: all 0.5s;
 }
 
+.navbar_active{
+    text-decoration: underline !important;
+}
+
 .hpw_navbar_combinationOne{
     background-color: rgb(17, 46, 59);
     color: rgb(250, 237, 162);

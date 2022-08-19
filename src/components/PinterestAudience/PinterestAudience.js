@@ -20,6 +20,7 @@ import { Collapse, Text } from "@nextui-org/react";
 
 const PinterestAudience = () => {
     const navigate = useNavigate();
+    const path = window.location.pathname;
 
     const [combinationNumber, setCombinationNumber] = useState("combinationOne");
 
@@ -52,7 +53,7 @@ const PinterestAudience = () => {
                 <div className="pa_navbar_logo">Business</div>
                 <div className="pa_navbar_items">
                     <div class="pa_navbar_dropdown">
-                        <p className="pa_navbar_dropbtn">Why pinterest?</p>
+                        <p className={classNames("pa_navbar_dropbtn", `${path === "/pinterest-audience" ? "navbar_active" : ""}`)}>Why pinterest?</p>
                         <div
                             className={classNames(
                                 `pa_navbar_dropdown_content_${combinationNumber}`,
@@ -65,7 +66,7 @@ const PinterestAudience = () => {
                             <p onClick={() => navigate("/getting-started")}>
                                 Getting started
                             </p>
-                            <p onClick={() => navigate("/pinterest-audience")}>
+                            <p onClick={() => navigate("/pinterest-audience")} className = {path === "/pinterest-audience" ? "navbar_active" : ""}>
                                 The Pinterest audience
                             </p>
                             <p onClick={() => navigate("/success-stories")}>Success story</p>
