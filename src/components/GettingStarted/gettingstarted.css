@@ -10,6 +10,26 @@
     transition: all 0.5s;
 }
 
+.gs_combinationThree{
+    background-color: rgb(105, 219, 162);
+    color: rgb(12, 88, 107);
+}
+
+.gs_combinationFour{
+    background-color: rgb(198, 236, 235);
+    color: rgb(12, 88, 107);
+}
+
+.gs_combinationFive{
+    background-color: rgb(255, 246, 235);
+    color: rgb(0, 92, 98);
+}
+
+.gs_combinationSix{
+    background-color: rgb(225, 246, 215);
+    color: rgb(45, 85, 255);
+}
+
 .gs_navbar{
     display: flex;
     justify-content: space-between;
@@ -32,6 +52,26 @@
     color: rgb(45, 85, 255);
 }
 
+.gs_navbar_combinationThree{
+    background-color: rgb(105, 219, 162);
+    color: rgb(12, 88, 107);
+}
+
+.gs_navbar_combinationFour{
+    background-color: rgb(198, 236, 235);
+    color: rgb(12, 88, 107);
+}
+
+.gs_navbar_combinationFive{
+    background-color: rgb(255, 246, 235);
+    color: rgb(0, 92, 98);
+}
+
+.gs_navbar_combinationSix{
+    background-color: rgb(225, 246, 215);
+    color: rgb(45, 85, 255);
+}
+
 .gs_navbar_combinationOne:hover{
     background-color: rgb(1, 0, 39);
     color: rgb(86, 128, 255);
@@ -40,6 +80,26 @@
 .gs_navbar_combinationTwo:hover{
     background-color: rgb(45, 85, 255);
     color: rgb(237, 236, 185);
+}
+
+.gs_navbar_combinationThree:hover{
+    background-color: rgb(12, 88, 107);
+    color: rgb(105, 219, 162);
+}
+
+.gs_navbar_combinationFour:hover{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.gs_navbar_combinationFive:hover{
+    background-color: rgb(0, 92, 98);
+    color: rgb(255, 246, 235);
+}
+
+.gs_navbar_combinationSix:hover{
+    background-color: rgb(45, 85, 255);
+    color: rgb(225, 246, 215);
 }
 
 .gs_navbar_logo{
@@ -80,6 +140,22 @@
     border: 2px solid rgb(45, 85, 255);
 }
 
+.gs_navbar_login_combinationThree{
+    border: 2px solid rgb(12, 88, 107);
+}
+
+.gs_navbar_login_combinationFour{
+    border: 2px solid rgb(12, 88, 107);
+}
+
+.gs_navbar_login_combinationFive{
+    border: 2px solid rgb(0, 92, 98);
+}
+
+.gs_navbar_login_combinationSix{
+    border: 2px solid rgb(45, 85, 255);
+}
+
 .gs_navbar:hover .gs_navbar_login_combinationOne{
     color: rgb(86, 128, 255);
     border: 2px solid rgb(86, 128, 255);
@@ -88,6 +164,26 @@
 .gs_navbar:hover .gs_navbar_login_combinationTwo{
     color: rgb(237, 236, 185);
     border: 2px solid rgb(237, 236, 185);
+}
+
+.gs_navbar:hover .gs_navbar_login_combinationThree{
+    color: rgb(105, 219, 162);
+    border: 2px solid rgb(105, 219, 162);
+}
+
+.gs_navbar:hover .gs_navbar_login_combinationFour{
+    color: rgb(198, 236, 235);
+    border: 2px solid rgb(198, 236, 235);
+}
+
+.gs_navbar:hover .gs_navbar_login_combinationFive{
+    color: rgb(255, 246, 235);
+    border: 2px solid rgb(255, 246, 235);
+}
+
+.gs_navbar:hover .gs_navbar_login_combinationSix{
+    color: rgb(225, 246, 215);
+    border: 2px solid rgb(225, 246, 215);
 }
 
 .gs_navbar_signup{
@@ -109,6 +205,26 @@
     color: rgb(237, 236, 185);
 }
 
+.gs_navbar_signup_combinationThree{
+    background-color: rgb(12, 88, 107);
+    color: rgb(105, 219, 162);
+}
+
+.gs_navbar_signup_combinationFour{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.gs_navbar_signup_combinationFive{
+    background-color: rgb(0, 92, 98);
+    color: rgb(255, 246, 235);
+}
+
+.gs_navbar_signup_combinationSix{
+    background-color: rgb(45, 85, 255);
+    color: rgb(225, 246, 215);
+}
+
 .gs_navbar:hover .gs_navbar_signup_combinationOne{
     background-color: rgb(86, 128, 255);
     color: rgb(1, 0, 39);
@@ -116,6 +232,26 @@
 
 .gs_navbar:hover .gs_navbar_signup_combinationTwo{
     background-color: rgb(237, 236, 185);
+    color: rgb(45, 85, 255);
+}
+
+.gs_navbar:hover .gs_navbar_signup_combinationThree{
+    background-color: rgb(105, 219, 162);
+    color: rgb(12, 88, 107);
+}
+
+.gs_navbar:hover .gs_navbar_signup_combinationFour{
+    background-color: rgb(198, 236, 235);
+    color: rgb(12, 88, 107);
+}
+
+.gs_navbar:hover .gs_navbar_signup_combinationFive{
+    background-color: rgb(255, 246, 235);
+    color: rgb(0, 92, 98);
+}
+
+.gs_navbar:hover .gs_navbar_signup_combinationSix{
+    background-color: rgb(225, 246, 215);
     color: rgb(45, 85, 255);
 }
 
@@ -154,6 +290,26 @@
 .gs_navbar_dropdown_content_combinationTwo{
     background-color: rgb(45, 85, 255);
     color: rgb(237, 236, 185);
+}
+
+.gs_navbar_dropdown_content_combinationThree{
+    background-color: rgb(12, 88, 107);
+    color: rgb(105, 219, 162);
+}
+
+.gs_navbar_dropdown_content_combinationFour{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.gs_navbar_dropdown_content_combinationFive{
+    background-color: rgb(0, 92, 98);
+    color: rgb(255, 246, 235);
+}
+
+.gs_navbar_dropdown_content_combinationSix{
+    background-color: rgb(45, 85, 255);
+    color: rgb(225, 246, 215);
 }
 
 .gs_navbar_dropdown_content p {
@@ -256,4 +412,318 @@
     font-weight: 500;
     margin: 0;
     text-align: left;
+}
+
+.gs_build{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.gs_build h1{
+    margin: 0;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.gs_build_bottom{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.gs_build_bottom_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+.gs_build_bottom_box svg{
+    width: 80px;
+    height: 80px;
+}
+
+.gs_build_bottom_box h2{
+    font-weight: 500;
+}
+
+.gs_build_bottom_box p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.gs_insights{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.gs_insights span{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.gs_insights h1{
+    margin: 0;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.gs_insights_bottom{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.gs_insights_bottom_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+.gs_insights_bottom_box svg{
+    width: 80px;
+    height: 80px;
+}
+
+.gs_insights_bottom_box h2{
+    font-weight: 500;
+}
+
+.gs_insights_bottom_box p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.gs_support{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gs_support h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+
+.gs_support_content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.gs_support_content_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gs_support_content_box h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.gs_support_content_box p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.gs_support_content_box_button{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 800;
+    border: 2px solid rgb(12, 88, 107);
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.gs_support_content_box_button:hover{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.gs_inspiration{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.gs_inspiration h1{
+    margin: 0;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.gs_inspiration_images{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.gs_inspiration_images_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.gs_inspiration_images_col img{
+    margin: 0.8rem;
+}
+
+.gs_getstarted{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gs_getstarted h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.gs_getstarted_buttons{
+    display: flex;
+}
+
+.gs_getstarted_button:nth-child(1){
+    font-size: 0.9rem;
+    padding: 1.5rem 1.8rem;
+    border-radius: 2.5rem;
+    font-weight: 800;
+    background-color: rgb(45, 85, 255);
+    color: rgb(225, 246, 215);
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.gs_getstarted_button:nth-child(2){
+    font-size: 0.9rem;
+    padding: 1.5rem 1.8rem;
+    border-radius: 2.5rem;
+    font-weight: 800;
+    border: 2px solid rgb(45, 85, 255);
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.gs_getstarted_button:nth-child(2):hover{
+    background-color: rgb(45, 85, 255);
+    color: rgb(225, 246, 215);
+}
+
+.gs_footer{
+    background-color: rgb(45, 85, 255);
+    color: rgb(225, 246, 215);
+    padding: 2rem 8rem 3rem 8rem;
+    margin-top: 9rem;
+}
+
+.gs_footer_collapse{
+    color: rgb(225, 246, 215);
+    border-bottom: 0.2px solid rgb(225, 246, 215);
+    margin-bottom: 2rem;
+}
+
+.gs_footer_collapse_contentcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+}
+
+.gs_footer_collapse_content{
+    width: 25%;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+.gs_footer_collapse_content span{
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    color: rgb(225, 246, 215);
+    border: 1px solid rgb(225, 246, 215);
+}
+
+.gs_footer_collapse_content p{
+    margin: 0;
+    color: rgb(225, 246, 215);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.gs_footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gs_footer_bottom_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gs_footer_bottom_left select{
+    padding: 1rem;
+    width: 250px;
+    border: 1px solid rgb(225, 246, 215);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(225, 246, 215);
+    margin: 4rem 0;
+    cursor: pointer;
+}
+
+.gs_footer_bottom_left span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.gs_footer_bottom_right{
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.gs_footer_bottom_right_column{
+    padding: 2rem;
+}
+
+.gs_footer_bottom_right_column ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.gs_footer_bottom_right_column ul li{
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 500;
 }

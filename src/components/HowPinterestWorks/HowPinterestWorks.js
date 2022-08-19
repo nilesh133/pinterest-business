@@ -59,7 +59,7 @@ const HowPinterestWorks = () => {
                             <p onClick={() => navigate("/how-pinterest-works")}>How pinterest works</p>
                             <p onClick={() => navigate("/getting-started")}>Getting started</p>
                             <p onClick={() => navigate("/pinterest-audience")}>The Pinterest audience</p>
-                            <p onClick={() => navigate("/success-story")}>Success story</p>
+                            <p onClick={() => navigate("/success-stories")}>Success story</p>
                         </div>
                     </div>
                     <div class="hpw_navbar_dropdown">

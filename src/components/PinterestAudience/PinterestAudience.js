@@ -68,7 +68,7 @@ const PinterestAudience = () => {
                             <p onClick={() => navigate("/pinterest-audience")}>
                                 The Pinterest audience
                             </p>
-                            <p onClick={() => navigate("/success-story")}>Success story</p>
+                            <p onClick={() => navigate("/success-stories")}>Success story</p>
                         </div>
                     </div>
                     <div class="pa_navbar_dropdown">

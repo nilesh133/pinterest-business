@@ -1,9 +1,9 @@
-const SuccessStories = () =>{
+const SuccessStories = () => {
     return(
-        <h1>
-            Success Stories Page
-        </h1>
+        <div>
+            Success Stories
+        </div>
     )
 }
 
-export default SuccessStories;
+export default SuccessStories
