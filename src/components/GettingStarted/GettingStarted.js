@@ -182,17 +182,17 @@ const GettingStarted = () => {
                         <h1>Your business</h1>
                         <h1>belongs here</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
-                            <Collapse title="Get a Business account" expanded arrowIcon={<BsPlusLg />}>
+                            <Collapse title="Get a Business account" expanded arrowIcon={<BsPlusLg />} style = {{borderBottom: "1px solid rgb(45, 85, 255)", padding: "1rem 0"}}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     You’ll get more out of Pinterest using a business account. Get access to special Pin formats, analytics and more.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Showcase your ideas" arrowIcon={<BsPlusLg />}>
+                            <Collapse title="Showcase your ideas" arrowIcon={<BsPlusLg />} style = {{borderBottom: "1px solid rgb(45, 85, 255)", padding: "1rem 0"}}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     Make Pins to tell the world what you’re all about. Choose from formats such as photos, videos and Idea Pins.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Engage with your audience" arrowIcon={<BsPlusLg />}>
+                            <Collapse title="Engage with your audience" arrowIcon={<BsPlusLg />} style = {{padding: "1rem 0"}}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     We’ll show your Pins to the people that we think are most likely to love them. People can comment, react or even add photos of Pins that they’ve tried.
                                 </Text>

@@ -1,0 +1,371 @@
+.ge_combinationOne{
+    background-color: rgb(225, 246, 215);
+    color: rgb(109, 109, 65);
+    transition: all 0.5s;
+}
+
+.ge_combinationTwo{
+    background-color: rgb(198, 236, 235);
+    color: rgb(12, 88, 107);
+    transition: all 0.5s;
+}
+
+.ge_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.navbar_active{
+    text-decoration: underline !important;
+}
+
+.ge_navbar_combinationOne{
+    background-color: rgb(225, 246, 215);
+    color: rgb(109, 109, 65);
+}
+
+.ge_navbar_combinationTwo{
+    background-color: rgb(198, 236, 235);
+    color: rgb(12, 88, 107);
+}
+
+.ge_navbar_combinationOne:hover{
+    background-color: rgb(109, 109, 65);
+    color: rgb(225, 246, 215);
+}
+
+.ge_navbar_combinationTwo:hover{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.ge_navbar_logo{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.ge_navbar_items{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.ge_navbar_items p{
+    margin: 0;
+    margin-right: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.ge_navbar_login{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 1.3rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.ge_navbar_login_combinationOne{
+    border: 2px solid rgb(109, 109, 65);
+}
+
+.ge_navbar_login_combinationTwo{
+    border: 2px solid rgb(12, 88, 107);
+}
+
+.ge_navbar:hover .ge_navbar_login_combinationOne{
+    color: rgb(225, 246, 215);
+    border: 2px solid rgb(225, 246, 215);
+}
+
+.ge_navbar:hover .ge_navbar_login_combinationTwo{
+    color: rgb(198, 236, 235);
+    border: 2px solid rgb(198, 236, 235);
+}
+
+.ge_navbar_signup{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 0.6rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.ge_navbar_signup_combinationOne{
+    background-color: rgb(109, 109, 65);
+    color: rgb(225, 246, 215);
+}
+
+.ge_navbar_signup_combinationTwo{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.ge_navbar:hover .ge_navbar_signup_combinationOne{
+    background-color: rgb(225, 246, 215);
+    color: rgb(109, 109, 65);
+}
+
+.ge_navbar:hover .ge_navbar_signup_combinationTwo{
+    background-color: rgb(198, 236, 235);
+    color: rgb(12, 88, 107);
+}
+
+.ge_navbar_dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.ge_navbar_dropbtn:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+  
+.ge_navbar_dropdown {
+    display: inline-block;
+}
+  
+.ge_navbar_dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: 43%;
+    padding-bottom: 2rem;
+}
+
+.ge_navbar_dropdown_content_combinationOne{
+    background-color: rgb(109, 109, 65);
+    color: rgb(225, 246, 215);
+}
+
+.ge_navbar_dropdown_content_combinationTwo{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.ge_navbar_dropdown_content p {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 5px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    padding: 1rem 0;
+}
+  
+.ge_navbar_dropdown_content p:hover {
+    text-decoration: underline;
+}
+  
+.ge_navbar_dropdown:hover .ge_navbar_dropdown_content {
+    display: block;
+}
+
+.ge_hero{
+    margin-top: 20rem;
+}
+
+.ge_hero h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.ge_hero p{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.ge_learn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12rem;
+}
+
+.ge_learn h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 4.5rem;
+}
+
+.ge_learn_content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ge_learn_contentbox{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ge_learn_contentbox h2{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.ge_learn_contentbox p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ge_learn_contentbox_button{
+    font-size: 0.9rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 800;
+    border: 2px solid rgb(109, 109, 65);
+    cursor: pointer;
+    font-weight: 700;
+    width: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.ge_learn_contentbox_button:hover{
+    background-color: rgb(109, 109, 65);
+    color: rgb(225, 246, 215);
+}
+
+.ge_support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12rem;
+}
+
+.ge_support h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 4.5rem;
+}
+
+.ge_support_content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ge_support_contentbox{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ge_support_contentbox h2{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.ge_support_contentbox p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ge_support_contentbox_button{
+    font-size: 0.9rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 2.5rem;
+    margin-top: 3rem;
+    font-weight: 800;
+    border: 2px solid rgb(12, 88, 107);
+    cursor: pointer;
+    font-weight: 700;
+    width: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.ge_support_contentbox_button:hover{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+}
+
+.ge_footer{
+    background-color: rgb(12, 88, 107);
+    color: rgb(198, 236, 235);
+    padding: 2rem 8rem 3rem 8rem;
+    margin-top: 9rem;
+}
+
+.ge_footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ge_footer_bottom_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ge_footer_bottom_left select{
+    padding: 1rem;
+    width: 250px;
+    border: 1px solid rgb(198, 236, 235);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(198, 236, 235);
+    margin: 4rem 0;
+    cursor: pointer;
+}
+
+.ge_footer_bottom_left span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ge_footer_bottom_right{
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.ge_footer_bottom_right_column{
+    padding: 2rem;
+}
+
+.ge_footer_bottom_right_column ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ge_footer_bottom_right_column ul li{
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
