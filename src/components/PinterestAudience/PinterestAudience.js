@@ -17,6 +17,7 @@ import reach_the_people_image2 from "../../images/pinterest-audience/reach-the-p
 
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
+import {BiPlus} from "react-icons/bi";
 
 const PinterestAudience = () => {
     const navigate = useNavigate();
@@ -308,7 +309,7 @@ const PinterestAudience = () => {
             <div className="pa_footer">
                 <div className="pa_footer_collapse">
                     <Collapse.Group>
-                        <Collapse title="Footnotes" style={{ color: "rgb(250, 237, 162)" }}>
+                        <Collapse title="Footnotes" style={{ color: "rgb(250, 237, 162)" }} arrowIcon={<BiPlus />}>
                             <div className="pa_footer_collapse_contentcontainer">
                                 <div className="pa_footer_collapse_content">
                                     <span>1</span>

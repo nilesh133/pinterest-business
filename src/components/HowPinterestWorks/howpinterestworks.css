@@ -385,6 +385,12 @@
     flex-direction: column;
 }
 
+.hpw_secondvideo_accordion .nextui-collapse-title {
+    color: rgb(0, 70, 83) !important;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
 .hpw_secondvideo_accordion_content{
     width: 70%;
     margin-left: 4.5rem;
@@ -687,6 +693,12 @@
     margin-bottom: 2rem;
 }
 
+.hpw_footer_collapse .nextui-collapse-title {
+    color: rgb(250, 237, 162) !important;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .hpw_footer_collapse_contentcontainer{
     display: flex;
     padding-top: 1.5rem;
@@ -699,7 +711,7 @@
 .hpw_footer_collapse_content span{
     font-size: 0.8rem;
     border-radius: 50%;
-    padding: 0.1rem 0.4rem;
+    padding: 0.1rem 0.4rem 0.2rem 0.4rem;
     color: rgb(250, 237, 162);
     border: 1px solid rgb(250, 237, 162);
 }

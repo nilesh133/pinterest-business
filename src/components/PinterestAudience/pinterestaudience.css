@@ -573,6 +573,12 @@
     margin-bottom: 2rem;
 }
 
+.pa_footer_collapse .nextui-collapse-title {
+    color: rgb(255, 223, 233) !important;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .pa_footer_collapse_contentcontainer{
     display: flex;
     flex-wrap: wrap;

@@ -407,6 +407,12 @@
     flex-direction: column;
 }
 
+.gs_business_accordion .nextui-collapse-title {
+    color: rgb(45, 85, 255) !important;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
 .gs_business_accordion_content{
     width: 70%;
     margin-left: 4.5rem;
@@ -654,6 +660,12 @@
     color: rgb(225, 246, 215);
     border-bottom: 0.2px solid rgb(225, 246, 215);
     margin-bottom: 2rem;
+}
+
+.gs_footer_collapse .nextui-collapse-title {
+    color: rgb(225, 246, 215) !important;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .gs_footer_collapse_contentcontainer{

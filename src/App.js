@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import "./App.css"
 
 import Home from "./components/Home/Home"
 import HowPinterestWorks from "./components/HowPinterestWorks/HowPinterestWorks";

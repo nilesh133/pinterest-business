@@ -21,6 +21,9 @@ import gs_inspiration_image8 from "../../images/getting-started/gs-inspiration/g
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
 
+import {BsPlusLg} from "react-icons/bs"
+import {BiPlus} from "react-icons/bi"
+
 const GettingStarted = () => {
     const navigate = useNavigate();
     const path = window.location.pathname;
@@ -179,17 +182,17 @@ const GettingStarted = () => {
                         <h1>Your business</h1>
                         <h1>belongs here</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
-                            <Collapse title="Get a Business account" expanded>
+                            <Collapse title="Get a Business account" expanded arrowIcon={<BsPlusLg />}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     You’ll get more out of Pinterest using a business account. Get access to special Pin formats, analytics and more.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Showcase your ideas">
+                            <Collapse title="Showcase your ideas" arrowIcon={<BsPlusLg />}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     Make Pins to tell the world what you’re all about. Choose from formats such as photos, videos and Idea Pins.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Engage with your audience">
+                            <Collapse title="Engage with your audience" arrowIcon={<BsPlusLg />}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     We’ll show your Pins to the people that we think are most likely to love them. People can comment, react or even add photos of Pins that they’ve tried.
                                 </Text>
@@ -328,7 +331,7 @@ const GettingStarted = () => {
             <div className="gs_footer">
                 <div className="gs_footer_collapse">
                     <Collapse.Group style={{ color: "rgb(225, 246, 215)" }}>
-                        <Collapse title="Footnotes">
+                        <Collapse title="Footnotes" arrowIcon={<BiPlus />}>
                             <div className="gs_footer_collapse_contentcontainer">
                                 <div className="gs_footer_collapse_content">
                                     <span>1</span>
