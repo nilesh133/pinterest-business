@@ -8,6 +8,8 @@ import agency_resources_hero_image1 from "../../images/agency-resources/agency-r
 import agency_resources_hero_image2 from "../../images/agency-resources/agency-resources-hero/agency-resources-hero-image2.png"
 import agency_resources_hero_image3 from "../../images/agency-resources/agency-resources-hero/agency-resources-hero-image3.gif"
 import agency_resources_hero_image4 from "../../images/agency-resources/agency-resources-hero/agency-resources-hero-image4.png"
+import agency_resources_agency_toolkit_image1 from "../../images/agency-resources/agency-resources-agency-toolkit/agency-resources-agency-toolkit-image1.png"
+import agency_resources_agency_toolkit_image2 from "../../images/agency-resources/agency-resources-agency-toolkit/agency-resources-agency-toolkit-image2.png"
 
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
@@ -26,11 +28,11 @@ const HowPinterestWorks = () => {
         if (window.scrollY >= 0 && window.scrollY <= 956) {
             setCombinationNumber("combinationOne")
         }
-        else if (window.scrollY >= 956 && window.scrollY <= 3688) {
+        else if (window.scrollY >= 956 && window.scrollY <= 1740) {
             setCombinationNumber("combinationTwo")
         }
         else {
-            setCombinationNumber("combinationThree")
+            setCombinationNumber("combinationOne")
         }
     }
 
@@ -45,7 +47,7 @@ const HowPinterestWorks = () => {
                 <div className="ar_navbar_logo">Business</div>
                 <div className="ar_navbar_items" >
                     <div class="ar_navbar_dropdown">
-                        <p className={classNames("ar_navbar_dropbtn", `${path === "/how-pinterest-works" ? "navbar_active" : ""}`)}>Why pinterest?</p>
+                        <p className="ar_navbar_dropbtn">Why pinterest?</p>
                         <div className={classNames(`ar_navbar_dropdown_content_${combinationNumber}`, "ar_navbar_dropdown_content")}>
                             <p onClick={() => navigate("/how-pinterest-works")} className={path === "/how-pinterest-works" ? "navbar_active" : ""}>How pinterest works</p>
                             <p onClick={() => navigate("/getting-started")}>Getting started</p>
@@ -69,10 +71,10 @@ const HowPinterestWorks = () => {
                         </div>
                     </div>
                     <div class="ar_navbar_dropdown">
-                        <p className="ar_navbar_dropbtn">Resources</p>
+                        <p className={classNames("ar_navbar_dropbtn", `${path === "/agency-resources" ? "navbar_active" : ""}`)}>Resources</p>
                         <div className={classNames(`ar_navbar_dropdown_content_${combinationNumber}`, "ar_navbar_dropdown_content")}>
                             <p onClick={() => navigate("/pinterest-business-partners")}>Pinterest Business Partners</p>
-                            <p onClick={() => navigate("/agency-resources")}>Agency Resources</p>
+                            <p onClick={() => navigate("/agency-resources")} className={path === "/agency-resources" ? "navbar_active" : ""}>Agency Resources</p>
                             <p onClick={() => navigate("/guides-and-education")}>Guides and Education</p>
                         </div>
                     </div>
@@ -106,19 +108,19 @@ const HowPinterestWorks = () => {
             <div className="ar_pitch">
                 <div className="ar_pitch_left">
                     <div className="ar_pitch_left_content">
-                    <h1>Why pitch</h1>
-                    <h1>Pinterest</h1>
-                    <div className="ar_pitch_left_para">
-                        <p>Pinterest is a full-funnel solution that reaches high-intent</p>
-                        <p>audiences. It’s the only platform where people actively plan for</p>
-                        <p>what’s next, so you can reach them at critical moments</p>
-                        <p>throughout the decision-making process.</p>
+                        <h1>Why pitch</h1>
+                        <h1>Pinterest</h1>
+                        <div className="ar_pitch_left_para">
+                            <p>Pinterest is a full-funnel solution that reaches high-intent</p>
+                            <p>audiences. It’s the only platform where people actively plan for</p>
+                            <p>what’s next, so you can reach them at critical moments</p>
+                            <p>throughout the decision-making process.</p>
+                        </div>
+                        <div className="ar_pitch_left_button" onClick={() => navigate("/pinterest-audience")}>
+                            Read success stories
+                        </div>
                     </div>
-                    <div className="ar_pitch_left_button" onClick={() => navigate("/pinterest-audience")}>
-                        Read success stories
-                    </div>
-                    </div>
-                   
+
                 </div>
                 <div className="ar_pitch_right">
                     <div className="ar_pitch_right_image"></div>
@@ -131,10 +133,94 @@ const HowPinterestWorks = () => {
                     </div>
                 </div>
             </div>
-            <div className="ar_agency">
-                <h1>Afency</h1>
+            <div className="ar_agencytoolkit">
+                <h1>Get our agency toolkits</h1>
+                <div className="ar_agencytoolkit_content_container">
+                    <div className="ar_agencytoolkit_content">
+                        <img src={agency_resources_agency_toolkit_image1} />
+                        <h2>Media agency guide</h2>
+                        <div className="ar_agencytoolkit_content_para">
+                            <p>Get help picking the right campaign type, analysing results</p>
+                            <p>and more</p>
+                        </div>
+                        <div className="ar_agencytoolkit_content_button">
+                            Download now
+                        </div>
+                    </div>
+                    <div className="ar_agencytoolkit_content">
+                        <img src={agency_resources_agency_toolkit_image2} />
+                        <h2>Creative agency guide</h2>
+                        <div className="ar_agencytoolkit_content_para">
+                            <p>Learn essential tactics for creating high-performing static</p>
+                            <p>and Video Pins.</p>
+                        </div>
+                        <div className="ar_agencytoolkit_content_button">
+                            Download now
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="ar_footer">
+                <div className="ar_footer_collapse">
+                    <Collapse.Group style={{ color: "rgb(225, 246, 215)" }}>
+                        <Collapse title="Footnotes" arrowIcon={<BiPlus />} onClick = {() => console.log("clicked")}>
+                            <div className="ar_footer_collapse_contentcontainer">
+                                <div className="ar_footer_collapse_content">
+                                    <span>1</span>
+                                    <p>Path to Purchase Research 2019/2020, UK;</p>
+                                    <p>GlobalWebIndex 2019 Q1-Q4, UKNielsen</p>
+                                </div>
+                            </div>
+                        </Collapse>
+                    </Collapse.Group>
+                </div>
+                <div className="ar_footer_bottom">
+                    <div className="ar_footer_bottom_left">
+                        <h1>Pinterest</h1>
+                        <select name="language" id="language">
+
+                            <option value="English(India)">English(India)</option>
+                            <option value="English(US)">English(US)</option>
+                            <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                            <option value="Bahasa Malaysia">Bahasa Malaysia</option>
+
+                        </select>
+                        <span>©️ 2022 Pinterest</span>
+                    </div>
+                    <div className="ar_footer_bottom_right">
+                        <div className="ar_footer_bottom_right_column">
+                            <h4>About</h4>
+                            <ul>
+                                <li>Our Pinterest Profile</li>
+                                <li>Newsroom</li>
+                                <li>Career</li>
+                                <li>Brand guidelines</li>
+                            </ul>
+                        </div>
+                        <div className="ar_footer_bottom_right_column">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li>Help Center</li>
+                                <li>Business Community</li>
+                                <li>For developers</li>
+                                <li>For investors</li>
+                            </ul>
+                        </div>
+                        <div className="ar_footer_bottom_right_column">
+                            <h4>Policies</h4>
+                            <ul>
+                                <li>Copyright & Trademark</li>
+                                <li>Terms of service</li>
+                                <li>Privacy and Cookies</li>
+                                <li>Personalised ads</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+
     )
 }
 

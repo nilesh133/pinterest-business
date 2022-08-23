@@ -88,7 +88,7 @@ const GuidesEducation = () =>{
                         </div>
                     </div>
                     <div class="ge_navbar_dropdown">
-                        <p className="ge_navbar_dropbtn">Resources</p>
+                        <p className={classNames("ar_navbar_dropbtn", `${path === "/guides-and-education" ? "navbar_active" : ""}`)}>Resources</p>
                         <div
                             className={classNames(
                                 `ge_navbar_dropdown_content_${combinationNumber}`,
@@ -101,7 +101,7 @@ const GuidesEducation = () =>{
                             <p onClick={() => navigate("/agency-resources")}>
                                 Agency Resources
                             </p>
-                            <p onClick={() => navigate("/guides-and-education")}>
+                            <p className={path === "/guides-and-education" ? "navbar_active" : ""} onClick={() => navigate("/guides-and-education")}>
                                 Guides and Education
                             </p>
                         </div>

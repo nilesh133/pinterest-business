@@ -88,14 +88,14 @@ const BusinessPartners = () =>{
                         </div>
                     </div>
                     <div class="pbp_navbar_dropdown">
-                        <p className="pbp_navbar_dropbtn">Resources</p>
+                        <p className={classNames("ar_navbar_dropbtn", `${path === "/pinterest-business-partners" ? "navbar_active" : ""}`)}>Resources</p>
                         <div
                             className={classNames(
                                 `pbp_navbar_dropdown_content_${combinationNumber}`,
                                 "pbp_navbar_dropdown_content"
                             )}
                         >
-                            <p onClick={() => navigate("/pinterest-business-partners")}>
+                            <p className={path === "/pinterest-business-partners" ? "navbar_active" : ""} onClick={() => navigate("/pinterest-business-partners")}>
                                 Pinterest Business Partners
                             </p>
                             <p onClick={() => navigate("/agency-resources")}>
