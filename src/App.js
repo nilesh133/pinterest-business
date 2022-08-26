@@ -7,7 +7,7 @@ import GettingStarted from "./components/GettingStarted/GettingStarted";
 import PinterestAudience from "./components/PinterestAudience/PinterestAudience";
 import SuccessStories from "./components/SuccessStories/SuccessStories";
 import PinterestCreators from "./components/PinterestCreators/PinterestCreators";
-import MakingPins from "./components/MakingPins/MakingPins";
+import HowToMakePins from "./components/HowToMakePins/HowToMakePins";
 import BestPractices from "./components/BestPractices/BestPractices";
 import PinterestPredicts from "./components/PinterestPredicts/PinterestPredicts";
 import BusinessPartners from "./components/BusinessPartners/BusinessPartners";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/pinterest-audience" exact element={<PinterestAudience />} />
         <Route path="/success-stories" exact element={<SuccessStories />} />
         <Route path="/creators" exact element={<PinterestCreators />} />
-        <Route path="/how-to-make-pins" exact element={<MakingPins />} />
+        <Route path="/how-to-make-pins" exact element={<HowToMakePins />} />
         <Route path="/creative-best-practices" exact element={<BestPractices />} />
         <Route path="/pinterest-predicts" exact element={<PinterestPredicts />} />
         <Route path="/pinterest-business-partners" exact element={<BusinessPartners />} />
