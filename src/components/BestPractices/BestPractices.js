@@ -15,7 +15,15 @@ import best_practices_hero_image3 from "../../images/best-practices/best-practic
 import best_practices_hero_image4 from "../../images/best-practices/best-practices-hero/best-practices-hero-image4.png"
 import best_practices_specs from "../../images/best-practices/best-practices-specs.png"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const BestPractices = () => {
+    AOS.init({
+        duration: 400,
+        easing: 'ease',
+    });
+
     const navigate = useNavigate();
     const path = window.location.pathname;
 
@@ -285,7 +293,7 @@ const BestPractices = () => {
                 </div>
             </div>
             <div className="bp_hero">
-                <div className="bp_hero_images">
+                <div className="bp_hero_images" data-aos="fade-up">
                     <div className="bp_hero_images_leftcol">
                         <img src={best_practices_hero_image1} width="289px" height="433px" style={{ objectFit: "cover", borderRadius: "2rem", padding: "0.6rem" }} />
                         <img src={best_practices_hero_image2} width="289px" height="433px" style={{ objectFit: "cover", borderRadius: "2rem", padding: "0.6rem" }} />
@@ -304,10 +312,10 @@ const BestPractices = () => {
                 </div>
             </div>
             <div className="bp_pins">
-                <div className="bp_pins_image">
+                <div className="bp_pins_image" data-aos="fade-up">
                     <img src={pinData.src} width={pinData.width} height={pinData.height} style={{ objectFit: "contain", marginLeft: "5rem" }} />
                 </div>
-                <div className="bp_pins_accordion">
+                <div className="bp_pins_accordion" data-aos="fade-up">
                     <div className="bp_pins_accordion_content">
                         <h1>Standard pins</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
@@ -347,7 +355,7 @@ const BestPractices = () => {
 
             </div>
             <div className="bp_videopins">
-                <div className="bp_videopins_accordion">
+                <div className="bp_videopins_accordion" data-aos="fade-up">
                     <div className="bp_videopins_accordion_content">
                         <h1>Video pins</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
@@ -379,13 +387,13 @@ const BestPractices = () => {
                         </Collapse.Group>
                     </div>
                 </div>
-                <div className="bp_videopins_image">
+                <div className="bp_videopins_image" data-aos="fade-up">
                     <img src={videoPinData.src} width={videoPinData.width} height={videoPinData.height} style={{ objectFit: "contain", marginLeft: "5rem" }} />
                 </div>
             </div>
             <div className="bp_ideapins">
 
-                <div className="bp_ideapins_image">
+                <div className="bp_ideapins_image" data-aos="fade-up">
                     {
                         ideaPinData.tag === "video" ?
                             <video controls autoPlay loop>
@@ -396,7 +404,7 @@ const BestPractices = () => {
 
                     }
                 </div>
-                <div className="bp_ideapins_accordion">
+                <div className="bp_ideapins_accordion" data-aos="fade-up">
                     <div className="bp_ideapins_accordion_content">
                         <h1>Idea Pins</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
@@ -454,7 +462,7 @@ const BestPractices = () => {
                         See specs
                     </div>
                 </div>
-                <div className="bp_specs_right">
+                <div className="bp_specs_right" data-aos="fade-up">
                     <img src={best_practices_specs} width = "392px" height= "640px" style={{objectFit: "cover"}}/>
                 </div>
             </div>

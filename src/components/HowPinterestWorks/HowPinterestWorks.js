@@ -16,7 +16,15 @@ import { Collapse, Text } from "@nextui-org/react";
 import {BsPlusLg} from "react-icons/bs";
 import {BiPlus} from "react-icons/bi"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const HowPinterestWorks = () => {
+    AOS.init({
+        duration: 400,
+        easing: 'ease',
+    });
+
     const navigate = useNavigate();
     const path = window.location.pathname;
 
@@ -98,7 +106,7 @@ const HowPinterestWorks = () => {
                 </div>
             </div>
             <div className="hpw_hero">
-                <div className="hpw_hero_images">
+                <div className="hpw_hero_images" data-aos="fade-up">
                     <div className="hpw_hero_images_leftcol">
                         <img src={hpw_image1} width="289px" height="346px" style={{ objectFit: "cover", borderRadius: "2rem", padding: "0.6rem" }} />
                         <img src={hpw_image2} width="289px" height="346px" style={{ objectFit: "cover", borderRadius: "2rem", padding: "0.6rem" }} />
@@ -143,7 +151,7 @@ const HowPinterestWorks = () => {
                 <p>and plan for what’s next (home renovations, university, a new baby).</p>
             </div>
             <div className="hpw_secondvideo">
-                <div className="hpw_secondvideo_accordion">
+                <div className="hpw_secondvideo_accordion" data-aos="fade-up">
                     <div className="hpw_secondvideo_accordion_content">
                         <h1>A guide to the</h1>
                         <h1>perfect find</h1>
@@ -161,14 +169,14 @@ const HowPinterestWorks = () => {
                         </Collapse.Group>
                     </div>
                 </div>
-                <div className="hpw_secondvideo_video">
+                <div className="hpw_secondvideo_video" data-aos="fade-up">
                     <video controls autoPlay loop>
                         <source src="https://v.pinimg.com/videos/mc/720p/8c/30/00/8c30009a86c2042137a9056cd18e7c6e.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
             <div className="hpw_rightaudience">
-                <div className="hpw_rightaudience_left">
+                <div className="hpw_rightaudience_left" data-aos="fade-up">
                     <div className="hpw_rightaudience_left_image"></div>
                     <div className={classNames(`hpw_rightaudience_left_card_${combinationNumber}`, "hpw_rightaudience_left_card")}>
                         <h1>400M</h1>
@@ -211,7 +219,7 @@ const HowPinterestWorks = () => {
                 <h1>Brands and Creators see strong results</h1>
                 <div className="hpw_brands_content_container">
                     <div className="hpw_brands_content">
-                        <img src={brand_and_creator_1} />
+                        <img src={brand_and_creator_1} data-aos="fade-up"/>
                         <h2>MVMT grew their sales</h2>
                         <div className="hpw_brands_content_para">
                             <p>Pinterest trends helped them to create fresh, eye-catching</p>
@@ -223,7 +231,7 @@ const HowPinterestWorks = () => {
                         </div>
                     </div>
                     <div className="hpw_brands_content">
-                        <img src={brand_and_creator_2} />
+                        <img src={brand_and_creator_2} data-aos="fade-up"/>
                         <h2>Jomely Breton grew her audience</h2>
                         <div className="hpw_brands_content_para">
                             <p>Pinterest helped the fashion and travel expert to add 148%</p>

@@ -3,6 +3,8 @@ import { useState } from "react";
 import "./pinterestaudience.css";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Images Import
 import hero_image from "../../images/pinterest-audience/hero-image.png";
@@ -20,6 +22,10 @@ import { Collapse, Text } from "@nextui-org/react";
 import {BiPlus} from "react-icons/bi";
 
 const PinterestAudience = () => {
+    AOS.init({
+        duration: 400,
+        easing: 'ease',
+    });
     const navigate = useNavigate();
     const path = window.location.pathname;
 
@@ -271,9 +277,8 @@ const PinterestAudience = () => {
             <div className="pa_reach">
                 <h1>Reach the right people at the right time</h1>
                 <div className="pa_reach_content">
-                    {/* 464 258 */}
                     <div className="pa_reach_content_box">
-                        <img src={reach_the_people_image1} width="464px" height="258px" style={{ objectFit: "cover" }} />
+                        <img src={reach_the_people_image1} width="464px" height="258px" style={{ objectFit: "cover" }} data-aos="fade-up"/>
                         <h2>Reach your target audience</h2>
                         <p>Our targeting tools give you the flexibility to reach people</p>
                         <p>by demographics, interests, keywords and more. Or, use</p>
@@ -284,7 +289,7 @@ const PinterestAudience = () => {
                         </div>
                     </div>
                     <div className="pa_reach_content_box">
-                        <img src={reach_the_people_image2} width="464px" height="258px" style={{ objectFit: "cover" }} />
+                        <img src={reach_the_people_image2} width="464px" height="258px" style={{ objectFit: "cover" }} data-aos="fade-up"/>
                         <h2>Explore interactive insights</h2>
                         <p>Our insights tools go deep on Pinner demographics,</p>
                         <p>interests and behaviours. You can use these insights to</p>

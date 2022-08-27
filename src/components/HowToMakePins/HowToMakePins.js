@@ -3,19 +3,29 @@ import { useState } from "react";
 import "./howtomakepins.css";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Images Import
 import htmp_hero_image from "../../images/how-to-make-pins/htmp-hero-image.png"
 import htmp_publish_image from "../../images/how-to-make-pins/htmp-publish-image.png"
 import htmp_work_image from "../../images/how-to-make-pins/htmp-work-image.png"
+import htmp_perfect_image_standard from "../../images/how-to-make-pins/htmp-perfect-images/htmp-perfect-image-standard.png"
+import htmp_perfect_image_video from "../../images/how-to-make-pins/htmp-perfect-images/htmp-perfect-image-video.png"
+import htmp_perfect_image_idea from "../../images/how-to-make-pins/htmp-perfect-images/htmp-perfect-image-idea.png"
 
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
 
-import {BsPlusLg} from "react-icons/bs"
-import {BiPlus} from "react-icons/bi"
+import { BsPlusLg } from "react-icons/bs"
+import { BiPlus } from "react-icons/bi"
 
 const HowToMakePins = () => {
+    AOS.init({
+        duration: 400,
+        easing: 'ease',
+    });
+
     const navigate = useNavigate();
     const path = window.location.pathname;
 
@@ -82,6 +92,62 @@ const HowToMakePins = () => {
         })
     }
 
+    const [perfect, setPerfect] = useState({
+        para: "Use eye-catching images to highlight products, recipes, photos and more.",
+        active: "Standard"
+    })
+
+    const [active, setActive] = useState("Standard")
+
+    const perfectData = [
+        {
+            para: "Use eye-catching images to highlight products, recipes, photos and more.",
+            active: "Standard"
+        },
+        {
+            para: "Capture people’s attention with sight, sound and motion.",
+            active: "Video"
+        },
+        {
+            para: "Tell actionable, multi-page stories that put your best ideas front and centre. You can earn money with Idea Pins through Creator Rewards, or take advantage of brand partnerships with the paid partnership tool and affiliate links.",
+            active: "Idea"
+        }
+    ]
+
+    // const changePerfectData = (index) => {
+    //     setPerfect({
+    //         para: perfectData[index].para,
+    //         active: perfectData[index].active
+    //     })
+    //     switch (perfect.active) {
+    //         case "Standard":
+    //             return <PerfectRightOne />;
+    //         case "Video":
+    //             return <PerfectRightTwo />;
+    //         default:
+    //     }
+    //     console.log(perfect.active)
+    // }
+
+    const perfectRightToggler = (active) => {
+        switch (active) {
+            case "Standard":
+                return <PerfectRightStandard />;
+            case "Video":
+                return <PerfectRightVideo />;
+            case "Idea":
+                return <PerfectRightIdea />;
+            default:
+        }
+    };
+
+    useEffect(() =>{
+        AOS.init({
+            duration: 400,
+            easing: 'ease',
+        });
+    }, [perfect.active])
+
 
     return (
         <div className={`htmp_${combinationNumber}`}>
@@ -101,7 +167,7 @@ const HowToMakePins = () => {
                             <p onClick={() => navigate("/how-pinterest-works")}>
                                 How pinterest works
                             </p>
-                            <p onClick={() => navigate("/getting-started")} className = {path === "/getting-started" ? "navbar_active" : ""}>
+                            <p onClick={() => navigate("/getting-started")} className={path === "/getting-started" ? "navbar_active" : ""}>
                                 Getting started
                             </p>
                             <p onClick={() => navigate("/pinterest-audience")}>
@@ -186,23 +252,62 @@ const HowToMakePins = () => {
                     <h1>Show the</h1>
                     <h1>possibilities</h1>
                     <div className="htmp_hero_left_para">
-                    <p>Create Pins to share your ideas, give tutorials or sell</p>
-                    <p>your products. Every Pin includes an image or video,</p>
-                    <p>plus a link to your site or shop.</p>
+                        <p>Create Pins to share your ideas, give tutorials or sell</p>
+                        <p>your products. Every Pin includes an image or video,</p>
+                        <p>plus a link to your site or shop.</p>
                     </div>
                     <div className="htmp_hero_left_button">
-                       Create pin
+                        Create pin
                     </div>
                 </div>
                 <div className="htmp_hero_right">
-                    <img src={htmp_hero_image} width = "625px" height= "388px" style={{objectFit: "cover"}}/>
+                    <img src={htmp_hero_image} width="625px" height="388px" style={{ objectFit: "cover" }} />
                 </div>
             </div>
-            <div className="htmp_perfect" style={{width: "1496px", height: "1260px"}}>
-
+            <div className="htmp_perfect">
+                <div className="htmp_perfect_left">
+                    <span>Pin formats</span>
+                    <h1>Pick the perfect format</h1>
+                    <div className="htmp_perfect_left_optionscontainer">
+                        <p className = {perfect.active === "Standard" ? "htmp_perfect_left_option_active" : "htmp_perfect_left_option"} 
+                        onClick={() => {
+                            setPerfect({
+                                para: perfectData[0].para,
+                                active: perfectData[0].active
+                            })
+                        }}>Standard</p>
+                        <p className = {perfect.active === "Video" ? "htmp_perfect_left_option_active" : "htmp_perfect_left_option"}
+                        onClick={() => {
+                            setPerfect({
+                                para: perfectData[1].para,
+                                active: perfectData[1].active
+                            })
+                        }}
+                        >Video</p>
+                        <p className = {perfect.active === "Idea" ? "htmp_perfect_left_option_active" : "htmp_perfect_left_option"}
+                        onClick={() => {
+                            setPerfect({
+                                para: perfectData[2].para,
+                                active: perfectData[2].active
+                            })
+                        }}
+                        >Idea</p>
+                    </div>
+                    <div className="htmp_perfect_left_para" data-aos="fade-up">
+                        {perfect.para}
+                    </div>
+                    <div className="htmp_perfect_left_navigation">
+                        See best practices
+                    </div>
+                </div>
+                <div className="htmp_perfect_right">
+                    {perfectRightToggler(perfect.active)}
+                    {/* {() => changePerfectData()} */}
+                    {/* <PerfectRight/> */}
+                </div>
             </div>
             <div className="htmp_publish">
-                <div className="htmp_publish_left">
+                <div className="htmp_publish_left" data-aos="fade-up">
                     <img src={htmp_publish_image} width="317px" height="640px" style={{ objectFit: "contain", marginLeft: "5rem" }} />
                 </div>
                 <div className="htmp_publish_right">
@@ -215,35 +320,35 @@ const HowToMakePins = () => {
 
             </div>
             <div className="htmp_discovered">
-                <div className="htmp_discovered_accordion">
+                <div className="htmp_discovered_accordion" data-aos="fade-up">
                     <div className="htmp_discovered_accordion_content">
                         <h1>How content gets</h1>
                         <h1>discovered</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
                             <Collapse title="Home feed" expanded arrowIcon={<BsPlusLg />} style={{ borderBottom: "1px solid rgb(44, 0, 102)", padding: "1rem 0" }} onClick={() => changeDiscoveredCollapseImage("0")}>
                                 <Text style={{ color: "rgb(44, 0, 102)", fontSize: "18px", lineHeight: "24px" }}>
-                                People browse their feeds for new ideas.
+                                    People browse their feeds for new ideas.
                                 </Text>
                             </Collapse>
                             <Collapse title="Search" arrowIcon={<BsPlusLg />} style={{ borderBottom: "1px solid rgb(44, 0, 102)", padding: "1rem 0" }} onClick={() => changeDiscoveredCollapseImage("1")}>
                                 <Text style={{ color: "rgb(44, 0, 102)", fontSize: "18px", lineHeight: "24px" }}>
-                                Keyword and visual searches bring people closer to decisions.
+                                    Keyword and visual searches bring people closer to decisions.
                                 </Text>
                             </Collapse>
                             <Collapse title="Related pins" arrowIcon={<BsPlusLg />} style={{ borderBottom: "1px solid rgb(44, 0, 102)", padding: "1rem 0" }} onClick={() => changeDiscoveredCollapseImage("2")}>
                                 <Text style={{ color: "rgb(44, 0, 102)", fontSize: "18px", lineHeight: "24px" }}>
-                                When people take a closer look at Pins that they like, we display similar Pins nearby.
+                                    When people take a closer look at Pins that they like, we display similar Pins nearby.
                                 </Text>
                             </Collapse>
                             <Collapse title="Shopping" arrowIcon={<BsPlusLg />} style={{ borderBottom: "1px solid rgb(44, 0, 102)", padding: "1rem 0" }} onClick={() => changeDiscoveredCollapseImage("3")}>
                                 <Text style={{ color: "rgb(44, 0, 102)", fontSize: "18px", lineHeight: "24px" }}>
-                                Shopping features and product Pins help people to discover new products, and then easily check out.
+                                    Shopping features and product Pins help people to discover new products, and then easily check out.
                                 </Text>
                             </Collapse>
                         </Collapse.Group>
                     </div>
                 </div>
-                <div className="htmp_discovered_image">
+                <div className="htmp_discovered_image" data-aos="fade-up">
                     <img src={discoveredData.src} width={discoveredData.width} height={discoveredData.height} style={{ objectFit: "contain", marginLeft: "5rem" }} />
                 </div>
             </div>
@@ -252,19 +357,19 @@ const HowToMakePins = () => {
                     <h1>Work with</h1>
                     <h1>experts</h1>
                     <div className="htmp_work_left_para">
-                    <p>Find a third-party partner to create Pins, manage your</p>
-                    <p>content strategy or build a stronger presence on</p>
-                    <p>Pinterest.</p>
+                        <p>Find a third-party partner to create Pins, manage your</p>
+                        <p>content strategy or build a stronger presence on</p>
+                        <p>Pinterest.</p>
                     </div>
                     <div className="htmp_work_left_button">
-                       Find a partner
+                        Find a partner
                     </div>
                 </div>
                 <div className="htmp_work_right">
-                    <img src={htmp_work_image} width = "625px" height= "560px" style={{objectFit: "cover"}}/>
+                    <img src={htmp_work_image} width="625px" height="560px" style={{ objectFit: "cover" }} />
                 </div>
             </div>
-            <div className = "htmp_winning">
+            <div className="htmp_winning">
                 <h1>A winning Pin strategy</h1>
                 <div className="htmp_winning_content">
                     <div className="htmp_winning_content_box">
@@ -281,8 +386,8 @@ const HowToMakePins = () => {
                     <div className="htmp_winning_content_box">
                         <svg viewBox="0 0 55 55">
                             <g stroke="#2C0066" stroke-width="4" fill="none" fill-rule="evenodd">
-                                <circle cx = "27.5" cy = "27.5" r = "25.5"></circle>
-                               <path d="M26.5 16.59v11.82M41.77 35.833L27 30" stroke-linecap = "round"></path>
+                                <circle cx="27.5" cy="27.5" r="25.5"></circle>
+                                <path d="M26.5 16.59v11.82M41.77 35.833L27 30" stroke-linecap="round"></path>
                             </g>
                         </svg>
                         <h2>Schedule your Pins</h2>
@@ -291,7 +396,7 @@ const HowToMakePins = () => {
                     </div>
                     <div className="htmp_winning_content_box">
                         <svg viewBox="0 0 70 54">
-                            <path d = "M62.96 0H7C3.13 0 0 3.13 0 7v39.45c0 3.87 3.13 7 7 7h55.96c3.87 0 7-3.13 7-7V7c0-3.87-3.13-7-7-7zM31.07 5.83c1.61 0 2.92 1.31 2.92 2.92 0 1.61-1.31 2.92-2.92 2.92-1.61 0-2.92-1.31-2.92-2.92 0-1.61 1.31-2.92 2.92-2.92zm-10.66 0c1.61 0 2.92 1.31 2.92 2.92 0 1.61-1.31 2.92-2.92 2.92-1.61 0-2.92-1.31-2.92-2.92 0-1.61 1.31-2.92 2.92-2.92zm-10.66 0c1.61 0 2.92 1.31 2.92 2.92 0 1.61-1.31 2.92-2.92 2.92-1.61 0-2.92-1.31-2.92-2.92 0-1.61 1.31-2.92 2.92-2.92zm53.38 37.89c0 1.6-1.3 2.9-2.9 2.9H9.74c-1.6 0-2.9-1.3-2.9-2.9V16.59h56.28v27.13h.01z" fill="#2C0066" fill-rule="nonzero"></path>
+                            <path d="M62.96 0H7C3.13 0 0 3.13 0 7v39.45c0 3.87 3.13 7 7 7h55.96c3.87 0 7-3.13 7-7V7c0-3.87-3.13-7-7-7zM31.07 5.83c1.61 0 2.92 1.31 2.92 2.92 0 1.61-1.31 2.92-2.92 2.92-1.61 0-2.92-1.31-2.92-2.92 0-1.61 1.31-2.92 2.92-2.92zm-10.66 0c1.61 0 2.92 1.31 2.92 2.92 0 1.61-1.31 2.92-2.92 2.92-1.61 0-2.92-1.31-2.92-2.92 0-1.61 1.31-2.92 2.92-2.92zm-10.66 0c1.61 0 2.92 1.31 2.92 2.92 0 1.61-1.31 2.92-2.92 2.92-1.61 0-2.92-1.31-2.92-2.92 0-1.61 1.31-2.92 2.92-2.92zm53.38 37.89c0 1.6-1.3 2.9-2.9 2.9H9.74c-1.6 0-2.9-1.3-2.9-2.9V16.59h56.28v27.13h.01z" fill="#2C0066" fill-rule="nonzero"></path>
                         </svg>
                         <h2>Add a URL</h2>
                         <p>Make every Pin actionable by adding a URL that</p>
@@ -301,7 +406,7 @@ const HowToMakePins = () => {
                         <svg viewBox="0 0 80 48">
                             <g fill="#2C0066" fill-rule="evenodd">
                                 <rect fill="#2C0066" width="36" height="48" rx="8"></rect>
-                                <path d= "M52 28h20a8 8 0 018 8v12H44V36a8 8 0 018-8zM52 20h20a8 8 0 008-8V0H44v12a8 8 0 008 8z"></path>
+                                <path d="M52 28h20a8 8 0 018 8v12H44V36a8 8 0 018-8zM52 20h20a8 8 0 008-8V0H44v12a8 8 0 008 8z"></path>
                             </g>
                         </svg>
                         <h2>Organise Pins into well-named boards</h2>
@@ -385,6 +490,93 @@ const HowToMakePins = () => {
                     </div>
                 </div>
 
+            </div>
+        </div>
+    )
+}
+
+const PerfectRightStandard = () => {
+    return(
+        <div className="perfectright" data-aos="fade-up">
+            <div className="perfectright_col">
+                <div className="perfectright_col_box" style={{width: "289px", height: "289px"}}>
+
+                </div>
+
+                <img src = {htmp_perfect_image_standard} width = "289px" height = "350px" style = {{objectFit: "cover", borderRadius: "1rem", margin: "0.5rem"}}/>
+
+                <div className="perfectright_col_box" style={{width: "289px", height: "289px"}}>
+
+                </div>
+            </div>
+            <div className="perfectright_col">
+                <div className="perfectright_col_box" style={{width: "289px", height: "433px"}}>
+
+                </div>
+                <div className="perfectright_col_box" style={{width: "289px", height: "346px"}}>
+                    
+                </div>
+                <div className="perfectright_col_box" style={{width: "289px", height: "346px"}}>
+
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const PerfectRightVideo = () => {
+    return(
+        <div className="perfectright" data-aos="fade-up">
+            <div className="perfectright_col">
+                <div className="perfectright_col_box" style={{width: "289px", height: "289px"}}>
+
+                </div>
+
+                <img src = {htmp_perfect_image_video} width = "289px" height = "385px" style = {{objectFit: "cover", borderRadius: "1rem", margin: "0.5rem"}}/>
+
+                <div className="perfectright_col_box" style={{width: "289px", height: "289px"}}>
+
+                </div>
+            </div>
+            <div className="perfectright_col">
+                <div className="perfectright_col_box" style={{width: "289px", height: "433px"}}>
+
+                </div>
+                <div className="perfectright_col_box" style={{width: "289px", height: "346px"}}>
+                    
+                </div>
+                <div className="perfectright_col_box" style={{width: "289px", height: "346px"}}>
+
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const PerfectRightIdea = () => {
+    return(
+        <div className="perfectright" data-aos="fade-up">
+            <div className="perfectright_col">
+                <div className="perfectright_col_box" style={{width: "289px", height: "289px"}}>
+
+                </div>
+
+                <img src = {htmp_perfect_image_idea} width = "289px" height = "513px" style = {{objectFit: "cover", borderRadius: "1rem", margin: "0.5rem"}}/>
+
+                <div className="perfectright_col_box" style={{width: "289px", height: "289px"}}>
+
+                </div>
+            </div>
+            <div className="perfectright_col">
+                <div className="perfectright_col_box" style={{width: "289px", height: "433px"}}>
+
+                </div>
+                <div className="perfectright_col_box" style={{width: "289px", height: "346px"}}>
+                    
+                </div>
+                <div className="perfectright_col_box" style={{width: "289px", height: "346px"}}>
+
+                </div>
             </div>
         </div>
     )

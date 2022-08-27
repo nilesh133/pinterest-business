@@ -17,7 +17,15 @@ import { Collapse, Text } from "@nextui-org/react";
 import { BsPlusLg } from "react-icons/bs";
 import { BiPlus } from "react-icons/bi"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const HowPinterestWorks = () => {
+    AOS.init({
+        duration: 400,
+        easing: 'ease',
+    });
+
     const navigate = useNavigate();
     const path = window.location.pathname;
 
@@ -87,7 +95,7 @@ const HowPinterestWorks = () => {
                 </div>
             </div>
             <div className="ar_hero">
-                <div className="ar_hero_images">
+                <div className="ar_hero_images" data-aos="fade-up">
                     <div className="ar_hero_images_leftcol">
                         <img src={agency_resources_hero_image1} width="289px" height="346px" style={{ objectFit: "cover", borderRadius: "2rem", padding: "0.6rem" }} />
                         <img src={agency_resources_hero_image2} width="289px" height="346px" style={{ objectFit: "cover", borderRadius: "2rem", padding: "0.6rem" }} />
@@ -122,7 +130,7 @@ const HowPinterestWorks = () => {
                     </div>
 
                 </div>
-                <div className="ar_pitch_right">
+                <div className="ar_pitch_right" data-aos="fade-up">
                     <div className="ar_pitch_right_image"></div>
                     <div className={classNames(`ar_pitch_right_card_${combinationNumber}`, "ar_pitch_right_card")}>
                         <h1>61%</h1>
@@ -137,7 +145,7 @@ const HowPinterestWorks = () => {
                 <h1>Get our agency toolkits</h1>
                 <div className="ar_agencytoolkit_content_container">
                     <div className="ar_agencytoolkit_content">
-                        <img src={agency_resources_agency_toolkit_image1} />
+                        <img src={agency_resources_agency_toolkit_image1} data-aos="fade-up"/>
                         <h2>Media agency guide</h2>
                         <div className="ar_agencytoolkit_content_para">
                             <p>Get help picking the right campaign type, analysing results</p>
@@ -148,7 +156,7 @@ const HowPinterestWorks = () => {
                         </div>
                     </div>
                     <div className="ar_agencytoolkit_content">
-                        <img src={agency_resources_agency_toolkit_image2} />
+                        <img src={agency_resources_agency_toolkit_image2} data-aos="fade-up"/>
                         <h2>Creative agency guide</h2>
                         <div className="ar_agencytoolkit_content_para">
                             <p>Learn essential tactics for creating high-performing static</p>

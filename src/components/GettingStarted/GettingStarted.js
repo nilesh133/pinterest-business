@@ -3,6 +3,8 @@ import { useState } from "react";
 import "./gettingstarted.css";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Images Imports
 import gs_hero_image from "../../images/getting-started/gs-hero-image.png"
@@ -25,6 +27,11 @@ import {BsPlusLg} from "react-icons/bs"
 import {BiPlus} from "react-icons/bi"
 
 const GettingStarted = () => {
+    AOS.init({
+        duration: 400,
+        easing: 'ease',
+    });
+
     const navigate = useNavigate();
     const path = window.location.pathname;
 
@@ -155,7 +162,7 @@ const GettingStarted = () => {
                 </div>
             </div>
             <div className="gs_hero">
-                <div className="gs_hero_images">
+                <div className="gs_hero_images" data-aos="fade-up">
                     <div className="gs_hero_images_leftcol">
                         <div style={{ width: "289px", height: "289px", background: "rgb(56, 105, 255)", borderRadius: "2rem", margin: "0.6rem" }}></div>
                         <div style={{ width: "289px", height: "433px", background: "rgb(56, 105, 255)", borderRadius: "2rem", margin: "0.6rem" }}></div>
@@ -174,10 +181,10 @@ const GettingStarted = () => {
                 </div>
             </div>
             <div className="gs_business">
-                <div className="gs_business_image">
+                <div className="gs_business_image" data-aos="fade-up">
                     <img src={your_business_image} width="317px" height="641px" style={{ objectFit: "cover" }} />
                 </div>
-                <div className="gs_business_accordion">
+                <div className="gs_business_accordion" data-aos="fade-up">
                     <div className="gs_business_accordion_content">
                         <h1>Your business</h1>
                         <h1>belongs here</h1>
@@ -278,7 +285,7 @@ const GettingStarted = () => {
                 <h1>Support to help you to study up</h1>
                 <div className="gs_support_content">
                     <div className="gs_support_content_box">
-                        <img src={gs_support_image1} width="464px" height="351px" style={{ objectFit: "cover" }} />
+                        <img src={gs_support_image1} width="464px" height="351px" style={{ objectFit: "cover" }} data-aos="fade-up"/>
                         <h2>Help Centre</h2>
                         <p>See step-by-step instructions and tactical guides.</p>
                         <div className="gs_support_content_box_button">
@@ -286,7 +293,7 @@ const GettingStarted = () => {
                         </div>
                     </div>
                     <div className="gs_support_content_box">
-                        <img src={gs_support_image2} width="464px" height="351px" style={{ objectFit: "cover" }} />
+                        <img src={gs_support_image2} width="464px" height="351px" style={{ objectFit: "cover" }} data-aos="fade-up"/>
                         <h2>Pinterest Business community</h2>
                         <p>Join a growing community of businesses and Creators.</p>
                         <p>Look for ideas, swap best practices and ask for advice.</p>
@@ -298,7 +305,7 @@ const GettingStarted = () => {
             </div>
             <div className="gs_inspiration">
                 <h1>Inspiration for your next Pin</h1>
-                <div className="gs_inspiration_images">
+                <div className="gs_inspiration_images" data-aos="fade-up">
                     <div className="gs_inspiration_images_col">
                         <img src = {gs_inspiration_image1} width = "280px" height = "280px" style = {{objectFit: "cover", borderRadius: "1.5rem"}}/>
                         <img src = {gs_inspiration_image2} width = "280px" height = "497px" style = {{objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem"}}/>
