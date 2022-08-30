@@ -20,7 +20,7 @@ import { BiPlus } from "react-icons/bi"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const HowPinterestWorks = () => {
+const AgencyResources = () => {
     AOS.init({
         duration: 400,
         easing: 'ease',
@@ -232,4 +232,4 @@ const HowPinterestWorks = () => {
     )
 }
 
-export default HowPinterestWorks;
+export default AgencyResources;

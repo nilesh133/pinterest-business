@@ -23,8 +23,8 @@ import gs_inspiration_image8 from "../../images/getting-started/gs-inspiration/g
 // Next UI Imports
 import { Collapse, Text } from "@nextui-org/react";
 
-import {BsPlusLg} from "react-icons/bs"
-import {BiPlus} from "react-icons/bi"
+import { BsPlusLg } from "react-icons/bs"
+import { BiPlus } from "react-icons/bi"
 
 const GettingStarted = () => {
     AOS.init({
@@ -81,7 +81,7 @@ const GettingStarted = () => {
                             <p onClick={() => navigate("/how-pinterest-works")}>
                                 How pinterest works
                             </p>
-                            <p onClick={() => navigate("/getting-started")} className = {path === "/getting-started" ? "navbar_active" : ""}>
+                            <p onClick={() => navigate("/getting-started")} className={path === "/getting-started" ? "navbar_active" : ""}>
                                 Getting started
                             </p>
                             <p onClick={() => navigate("/pinterest-audience")}>
@@ -189,17 +189,17 @@ const GettingStarted = () => {
                         <h1>Your business</h1>
                         <h1>belongs here</h1>
                         <Collapse.Group style={{ marginTop: "2rem" }}>
-                            <Collapse title="Get a Business account" expanded arrowIcon={<BsPlusLg />} style = {{borderBottom: "1px solid rgb(45, 85, 255)", padding: "1rem 0"}}>
+                            <Collapse title="Get a Business account" expanded arrowIcon={<BsPlusLg />} style={{ borderBottom: "1px solid rgb(45, 85, 255)", padding: "1rem 0" }}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     You’ll get more out of Pinterest using a business account. Get access to special Pin formats, analytics and more.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Showcase your ideas" arrowIcon={<BsPlusLg />} style = {{borderBottom: "1px solid rgb(45, 85, 255)", padding: "1rem 0"}}>
+                            <Collapse title="Showcase your ideas" arrowIcon={<BsPlusLg />} style={{ borderBottom: "1px solid rgb(45, 85, 255)", padding: "1rem 0" }}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     Make Pins to tell the world what you’re all about. Choose from formats such as photos, videos and Idea Pins.
                                 </Text>
                             </Collapse>
-                            <Collapse title="Engage with your audience" arrowIcon={<BsPlusLg />} style = {{padding: "1rem 0"}}>
+                            <Collapse title="Engage with your audience" arrowIcon={<BsPlusLg />} style={{ padding: "1rem 0" }}>
                                 <Text style={{ color: "rgb(45, 85, 255)" }}>
                                     We’ll show your Pins to the people that we think are most likely to love them. People can comment, react or even add photos of Pins that they’ve tried.
                                 </Text>
@@ -269,8 +269,8 @@ const GettingStarted = () => {
                     </div>
                     <div className="gs_insights_bottom_box">
                         <svg role="presentation" viewBox=" 0 0 70 54">
-                        <path d="M89.87 5.346A3 3 0 0086.13.654L53.004 27.065l-26.526-8.769-14.1 17.08-9.922 1.832a3 3 0 001.09 5.9l2.89-.533-5.38 6.515a3 3 0 004.628 3.82l9.93-12.03 17.839-3.293 35.002 10.596 20.77-11.458a3 3 0 10-2.898-5.254L67.772 41.708 33.796 31.422l-12.238 2.26 6.934-8.4 25.713 8.5L89.87 5.346z"
-                                fill="#0C586B" fillRule="evenodd" clipRule = "evenodd"
+                            <path d="M89.87 5.346A3 3 0 0086.13.654L53.004 27.065l-26.526-8.769-14.1 17.08-9.922 1.832a3 3 0 001.09 5.9l2.89-.533-5.38 6.515a3 3 0 004.628 3.82l9.93-12.03 17.839-3.293 35.002 10.596 20.77-11.458a3 3 0 10-2.898-5.254L67.772 41.708 33.796 31.422l-12.238 2.26 6.934-8.4 25.713 8.5L89.87 5.346z"
+                                fill="#0C586B" fillRule="evenodd" clipRule="evenodd"
                             ></path>
                         </svg>
                         <h2>Get the metrics that matter</h2>
@@ -285,7 +285,7 @@ const GettingStarted = () => {
                 <h1>Support to help you to study up</h1>
                 <div className="gs_support_content">
                     <div className="gs_support_content_box">
-                        <img src={gs_support_image1} width="464px" height="351px" style={{ objectFit: "cover" }} data-aos="fade-up"/>
+                        <img src={gs_support_image1} width="464px" height="351px" style={{ objectFit: "cover" }} data-aos="fade-up" />
                         <h2>Help Centre</h2>
                         <p>See step-by-step instructions and tactical guides.</p>
                         <div className="gs_support_content_box_button">
@@ -293,12 +293,12 @@ const GettingStarted = () => {
                         </div>
                     </div>
                     <div className="gs_support_content_box">
-                        <img src={gs_support_image2} width="464px" height="351px" style={{ objectFit: "cover" }} data-aos="fade-up"/>
+                        <img src={gs_support_image2} width="464px" height="351px" style={{ objectFit: "cover" }} data-aos="fade-up" />
                         <h2>Pinterest Business community</h2>
                         <p>Join a growing community of businesses and Creators.</p>
                         <p>Look for ideas, swap best practices and ask for advice.</p>
                         <div className="gs_support_content_box_button">
-                           Join the community
+                            Join the community
                         </div>
                     </div>
                 </div>
@@ -307,20 +307,20 @@ const GettingStarted = () => {
                 <h1>Inspiration for your next Pin</h1>
                 <div className="gs_inspiration_images" data-aos="fade-up">
                     <div className="gs_inspiration_images_col">
-                        <img src = {gs_inspiration_image1} width = "280px" height = "280px" style = {{objectFit: "cover", borderRadius: "1.5rem"}}/>
-                        <img src = {gs_inspiration_image2} width = "280px" height = "497px" style = {{objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem"}}/>
+                        <img src={gs_inspiration_image1} width="280px" height="280px" style={{ objectFit: "cover", borderRadius: "1.5rem" }} />
+                        <img src={gs_inspiration_image2} width="280px" height="497px" style={{ objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem" }} />
                     </div>
                     <div className="gs_inspiration_images_col">
-                        <img src = {gs_inspiration_image3} width = "280px" height = "497px" style = {{objectFit: "cover", borderRadius: "1.5rem"}}/>
-                        <img src = {gs_inspiration_image4} width = "280px" height = "280px" style = {{objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem"}}/>
+                        <img src={gs_inspiration_image3} width="280px" height="497px" style={{ objectFit: "cover", borderRadius: "1.5rem" }} />
+                        <img src={gs_inspiration_image4} width="280px" height="280px" style={{ objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem" }} />
                     </div>
                     <div className="gs_inspiration_images_col">
-                        <img src = {gs_inspiration_image5} width = "280px" height = "373px" style = {{objectFit: "cover", borderRadius: "1.5rem"}}/>
-                        <img src = {gs_inspiration_image6} width = "280px" height = "404px" style = {{objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem"}}/>
+                        <img src={gs_inspiration_image5} width="280px" height="373px" style={{ objectFit: "cover", borderRadius: "1.5rem" }} />
+                        <img src={gs_inspiration_image6} width="280px" height="404px" style={{ objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem" }} />
                     </div>
                     <div className="gs_inspiration_images_col">
-                        <img src = {gs_inspiration_image7} width = "280px" height = "336px" style = {{objectFit: "cover", borderRadius: "1.5rem"}}/>
-                        <img src = {gs_inspiration_image8} width = "280px" height = "441px" style = {{objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem"}}/>
+                        <img src={gs_inspiration_image7} width="280px" height="336px" style={{ objectFit: "cover", borderRadius: "1.5rem" }} />
+                        <img src={gs_inspiration_image8} width="280px" height="441px" style={{ objectFit: "cover", borderTopLeftRadius: "1.5rem", borderTopRightRadius: "1.5rem" }} />
                     </div>
                 </div>
             </div>

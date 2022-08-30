@@ -1,0 +1,1005 @@
+.pc_combinationOne{
+    background-color: rgb(85, 10, 169);
+    color: rgb(248, 247, 255);
+    transition: all 0.5s;
+}
+
+.pc_combinationTwo{
+    background-color: rgb(233, 228, 255);
+    color: rgb(73, 0, 167);
+    transition: all 0.5s;
+}
+
+.pc_combinationThree{
+    background-color: rgb(255, 254, 219);
+    color: rgb(85, 10, 169);
+}
+
+.pc_combinationFour{
+    background-color: rgb(255, 253, 146);
+    color: rgb(0, 80, 98);
+}
+
+.pc_combinationFive{
+    background-color: rgb(233, 228, 255);
+    color: rgb(44, 0, 102);
+}
+
+.pc_combinationSix{
+    background-color: rgb(255, 253, 146);
+    color: rgb(85, 10, 169);
+}
+
+.pc_combinationSeven{
+    background-color: rgb(106, 204, 255);
+    color: rgb(100, 62, 35);
+    transition: all 0.5s;
+}
+
+.pc_combinationEight{
+    background-color: rgb(255, 162, 153);
+    color: rgb(141, 23, 78);
+    transition: all 0.5s;
+}
+
+.pc_combinationNine{
+    background-color: rgb(255, 247, 210);
+    color: rgb(9, 89, 31);
+    transition: all 0.5s;
+}
+
+.pc_combinationTen{
+    background-color: rgb(149, 44, 37);
+    color: rgb(254, 213, 157);
+    transition: all 0.5s;
+}
+
+.pc_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.navbar_active{
+    text-decoration: underline !important;
+    text-underline-offset: 5px;
+}
+
+.pc_navbar_combinationOne{
+    background-color: rgb(85, 10, 169);
+    color: rgb(248, 247, 255);
+}
+
+.pc_navbar_combinationTwo{
+    background-color: rgb(233, 228, 255);
+    color: rgb(73, 0, 167);
+}
+
+.pc_navbar_combinationThree{
+    background-color: rgb(255, 254, 219);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar_combinationFour{
+    background-color: rgb(255, 253, 146);
+    color: rgb(0, 80, 98);
+}
+
+.pc_navbar_combinationFive{
+    background-color: rgb(233, 228, 255);
+    color: rgb(44, 0, 102);
+}
+
+.pc_navbar_combinationSix{
+    background-color: rgb(255, 253, 146);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar_combinationSeven{
+    background-color: rgb(106, 204, 255);
+    color: rgb(100, 62, 35);
+}
+
+.pc_navbar_combinationEight{
+    background-color: rgb(255, 162, 153);
+    color: rgb(141, 23, 78);
+}
+
+.pc_navbar_combinationNine{
+    background-color: rgb(255, 247, 210);
+    color: rgb(9, 89, 31);
+}
+
+.pc_navbar_combinationTen{
+    background-color: rgb(149, 44, 37);
+    color: rgb(254, 213, 157);
+}
+
+.pc_navbar_combinationOne:hover{
+    background-color: rgb(248, 247, 255);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar_combinationTwo:hover{
+    background-color: rgb(73, 0, 167);
+    color: rgb(233, 228, 255);
+}
+
+.pc_navbar_combinationThree:hover{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 254, 219);
+}
+
+.pc_navbar_combinationFour:hover{
+    background-color: rgb(0, 80, 98);
+    color: rgb(255, 253, 146);
+}
+
+.pc_navbar_combinationFive:hover{
+    background-color: rgb(44, 0, 102);
+    color: rgb(233, 228, 255);
+}
+
+.pc_navbar_combinationSix:hover{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 253, 146);
+}
+
+.pc_navbar_combinationSeven:hover{
+    background-color: rgb(100, 62, 35);
+    color: rgb(106, 204, 255);
+}
+
+.pc_navbar_combinationEight:hover{
+    background-color: rgb(141, 23, 78);
+    color: rgb(255, 162, 153);
+}
+
+.pc_navbar_combinationNine:hover{
+    background-color: rgb(9, 89, 31);
+    color: rgb(255, 247, 210);
+}
+
+.pc_navbar_combinationTen:hover{
+    background-color: rgb(254, 213, 157);
+    color: rgb(149, 44, 37);
+}
+
+.pc_navbar_logo{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.pc_navbar_items{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.pc_navbar_items p{
+    margin: 0;
+    margin-right: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.pc_navbar_login{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 1.3rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.pc_navbar_login_combinationOne{
+    border: 2px solid rgb(248, 247, 255);
+}
+
+.pc_navbar_login_combinationTwo{
+    border: 2px solid rgb(73, 0, 167);
+}
+
+.pc_navbar_login_combinationThree{
+    border: 2px solid rgb(85, 10, 169);
+}
+
+.pc_navbar_login_combinationFour{
+    border: 2px solid rgb(0, 80, 98);
+}
+
+.pc_navbar_login_combinationFive{
+    border: 2px solid rgb(44, 0, 102);
+}
+
+.pc_navbar_login_combinationSix{
+    border: 2px solid rgb(85, 10, 169);
+}
+
+.pc_navbar_login_combinationSeven{
+    border: 2px solid rgb(100, 62, 35);
+}
+
+.pc_navbar_login_combinationEight{
+    border: 2px solid rgb(141, 23, 78);
+}
+
+.pc_navbar_login_combinationNine{
+    border: 2px solid rgb(9, 89, 31);
+}
+
+.pc_navbar_login_combinationTen{
+    border: 2px solid rgb(254, 213, 157);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationOne{
+    color: rgb(85, 10, 169);
+    border: 2px solid rgb(85, 10, 169);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationTwo{
+    color: rgb(233, 228, 255);
+    border: 2px solid rgb(233, 228, 255);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationThree{
+    color: rgb(255, 254, 219);
+    border: 2px solid rgb(255, 254, 219);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationFour{
+    color: rgb(255, 253, 146);
+    border: 2px solid rgb(255, 253, 146);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationFive{
+    color: rgb(233, 228, 255);
+    border: 2px solid rgb(233, 228, 255);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationSix{
+    color: rgb(255, 253, 146);
+    border: 2px solid rgb(255, 253, 146);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationSeven{
+    color: rgb(106, 204, 255);
+    border: 2px solid rgb(106, 204, 255);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationEight{
+    color: rgb(255, 162, 153);
+    border: 2px solid rgb(255, 162, 153);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationNine{
+    color: rgb(255, 247, 210);
+    border: 2px solid rgb(255, 247, 210);
+}
+
+.pc_navbar:hover .pc_navbar_login_combinationTen{
+    color: rgb(149, 44, 37);
+    border: 2px solid rgb(149, 44, 37);
+}
+
+.pc_navbar_signup{
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    margin-left: 0.6rem; 
+    padding: 0.3rem 1rem 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.pc_navbar_signup_combinationOne{
+    background-color: rgb(248, 247, 255);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar_signup_combinationTwo{
+    background-color: rgb(73, 0, 167);
+    color: rgb(233, 228, 255);
+}
+
+.pc_navbar_signup_combinationThree{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 254, 219);
+}
+
+.pc_navbar_signup_combinationFour{
+    background-color: rgb(0, 80, 98);
+    color: rgb(255, 253, 146);
+}
+
+.pc_navbar_signup_combinationFive{
+    background-color: rgb(44, 0, 102);
+    color: rgb(233, 228, 255);
+}
+
+.pc_navbar_signup_combinationSix{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 253, 146);
+}
+
+.pc_navbar_signup_combinationSeven{
+    background-color: rgb(100, 62, 35);
+    color: rgb(106, 204, 255);
+}
+
+.pc_navbar_signup_combinationEight{
+    background-color: rgb(141, 23, 78);
+    color: rgb(255, 162, 153);
+}
+
+.pc_navbar_signup_combinationNine{
+    background-color: rgb(9, 89, 31);
+    color: rgb(255, 247, 210);
+}
+
+.pc_navbar_signup_combinationTen{
+    background-color: rgb(254, 213, 157);
+    color: rgb(149, 44, 37);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationOne{
+    background-color: rgb(85, 10, 169);
+    color: rgb(248, 247, 255);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationTwo{
+    background-color: rgb(233, 228, 255);
+    color: rgb(73, 0, 167);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationThree{
+    background-color: rgb(255, 254, 219);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationFour{
+    background-color: rgb(255, 253, 146);
+    color: rgb(0, 80, 98);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationFive{
+    background-color: rgb(233, 228, 255);
+    color: rgb(44, 0, 102);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationSix{
+    background-color: rgb(255, 253, 146);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationSeven{
+    color: rgb(100, 62, 35);
+    background-color: rgb(106, 204, 255);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationEight{
+    background-color: rgb(255, 162, 153);
+    color: rgb(141, 23, 78);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationNine{
+    background-color: rgb(255, 247, 210);
+    color: rgb(9, 89, 31);
+}
+
+.pc_navbar:hover .pc_navbar_signup_combinationTen{
+    background-color: rgb(149, 44, 37);
+    color: rgb(254, 213, 157);
+}
+
+.pc_navbar_dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.pc_navbar_dropbtn:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+  
+.pc_navbar_dropdown {
+    display: inline-block;
+}
+  
+.pc_navbar_dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    box-sizing: border-box;
+    padding-left: 43%;
+    padding-bottom: 2rem;
+}
+
+.pc_navbar_dropdown_content_combinationOne{
+    background-color: rgb(248, 247, 255);
+    color: rgb(85, 10, 169);
+}
+
+.pc_navbar_dropdown_content_combinationTwo{
+    background-color: rgb(73, 0, 167);
+    color: rgb(233, 228, 255);
+}
+
+.pc_navbar_dropdown_content_combinationThree{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 254, 219);
+}
+
+.pc_navbar_dropdown_content_combinationFour{
+    background-color: rgb(0, 80, 98);
+    color: rgb(255, 253, 146);
+}
+
+.pc_navbar_dropdown_content_combinationFive{
+    background-color: rgb(44, 0, 102);
+    color: rgb(233, 228, 255);
+}
+
+.pc_navbar_dropdown_content_combinationSix{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 253, 146);
+}
+
+.pc_navbar_dropdown_content_combinationSeven{
+    background-color: rgb(100, 62, 35);
+    color: rgb(106, 204, 255);
+}
+
+.pc_navbar_dropdown_content_combinationEight{
+    background-color: rgb(141, 23, 78);
+    color: rgb(255, 162, 153);
+}
+
+.pc_navbar_dropdown_content_combinationNine{
+    background-color: rgb(9, 89, 31);
+    color: rgb(255, 247, 210);
+}
+
+.pc_navbar_dropdown_content_combinationTen{
+    background-color: rgb(254, 213, 157);
+    color: rgb(149, 44, 37);
+}
+
+.pc_navbar_dropdown_content p {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: 5px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    padding: 1rem 0;
+}
+  
+.pc_navbar_dropdown_content p:hover {
+    text-decoration: underline;
+}
+  
+.pc_navbar_dropdown:hover .pc_navbar_dropdown_content {
+    display: block;
+}
+
+.pc_hero{
+    display: flex;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.pc_hero_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 7rem;
+}
+
+.pc_hero_left h1{
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pc_hero_left_para{
+    margin: 2rem 0;
+}
+
+.pc_hero_left p{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pc_hero_left_button{
+    font-size: 0.9rem;
+    padding: 1.2rem;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 800;
+    border: 2px solid rgb(255, 228, 193);
+    color: rgb(255, 228, 193);
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.pc_hero_left_button:hover{
+    background-color: rgb(255, 228, 193);
+    color: rgb(85, 10, 169);
+}
+
+.pc_hero_right{
+    margin-left: 9rem;
+}
+
+.pc_inspiration{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.pc_inspiration_image{
+    width: 30%;
+    margin-top: 8rem;
+}
+
+.pc_inspiration_accordion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc_inspiration_accordion .nextui-collapse-title {
+    color: rgb(73, 0, 167) !important;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.pc_inspiration_accordion_content{
+    width: 70%;
+}
+
+.pc_inspiration_accordion_content h1{
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
+
+.pc_simpletools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    width: 100%;
+}
+
+.pc_simpletools_left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.pc_simpletools_right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pc_simpletools_right h2{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pc_simpletools_right_list{
+    margin-top: 2rem;
+}
+
+.pc_simpletools_right_list li{
+    padding: 0.8rem 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pc_creatorsfirst{
+    margin-top: 12rem;
+}
+
+.pc_creatorsfirst h1{
+    font-size: 47px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.pc_creatorsfirst h1 span{
+    text-decoration: underline;
+}
+
+.pc_spotlight{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc_spotlight_left{
+    width: 50%;
+    margin-left: 6rem;
+}
+
+.pc_spotlight_left_option{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.pc_spotlight_left_optionunderline{
+    position: absolute;
+    top: 111%;
+    left: 1%;
+    height: 4px;
+}
+
+.pc_spotlight_left_optionunderline_combinationFour{
+    background-color: rgb(0, 80, 98);
+}
+
+.pc_spotlight_left_optionunderline_combinationSeven{
+    background-color: rgb(100, 62, 35);
+}
+
+.pc_spotlight_left_optionunderline_combinationEight{
+    background-color: rgb(141, 23, 78);
+}
+
+.pc_spotlight_left_optionunderline_combinationNine{
+    background-color: rgb(9, 89, 31);
+}
+
+.pc_spotlight_left_optionunderline_combinationTen{
+    background-color: rgb(254, 213, 157);
+}
+
+.pc_spotlight_left p{
+    font-size: 24px;
+}
+
+.pc_spotlight_left_option h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+}
+
+.pc_spotlight_optionunderline{
+    position: absolute;
+    top: 90%;
+    left: -2%;
+    height: 3px;
+    width: 0%;
+    transition: all 0.3s;
+}
+
+.pc_spotlight_optionunderline_combinationFour{
+    background-color: rgb(0, 80, 98);
+}
+
+.pc_spotlight_optionunderline_combinationSeven{
+    background-color: rgb(100, 62, 35);
+}
+
+.pc_spotlight_optionunderline_combinationEight{
+    background-color: rgb(141, 23, 78);
+}
+
+.pc_spotlight_optionunderline_combinationNine{
+    background-color: rgb(9, 89, 31);
+}
+
+.pc_spotlight_optionunderline_combinationTen{
+    background-color: rgb(254, 213, 157);
+}
+
+.pc_spotlight_left_option:hover .pc_spotlight_optionunderline{
+    width: 100%;
+}
+
+.pc_spotlight_left_option span{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.pc_spotlight_rightmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.pc_spotlight_rightinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc_spotlight_rightinner_para{
+    margin: 2rem 0;
+}
+
+.pc_spotlight_rightinner_para p{
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.pc_spotlight_rightinner span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pc_spotlight_rightmain_button{
+    width: 100px;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.pc_spotlight_rightmain_button_combinationFour{
+    border: 2px solid rgb(0, 80, 98);
+}
+
+.pc_spotlight_rightmain_button_combinationFour:hover{
+    background-color: rgb(0, 80, 98);
+    color: rgb(255, 253, 146);
+}
+
+.pc_spotlight_rightmain_button_combinationSeven{
+    border: 2px solid rgb(100, 62, 35);
+}
+
+.pc_spotlight_rightmain_button_combinationSeven:hover{
+    background-color: rgb(100, 62, 35);
+    color: rgb(106, 204, 255);
+}
+
+.pc_spotlight_rightmain_button_combinationEight{
+    border: 2px solid rgb(141, 23, 78);
+}
+
+.pc_spotlight_rightmain_button_combinationEight:hover{
+    background-color: rgb(141, 23, 78);
+    color: rgb(255, 162, 153);
+}
+
+.pc_spotlight_rightmain_button_combinationNine{
+    border: 2px solid rgb(9, 89, 31);
+}
+
+.pc_spotlight_rightmain_button_combinationNine:hover{
+    background-color: rgb(9, 89, 31);
+    color: rgb(255, 247, 210);
+}
+
+.pc_spotlight_rightmain_button_combinationTen{
+    border: 2px solid rgb(254, 213, 157);
+}
+
+.pc_spotlight_rightmain_button_combinationTen:hover{
+    background-color: rgb(254, 213, 157);
+    color: rgb(149, 44, 37);
+}
+
+.pc_tools{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc_tools h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.pc_tools_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.pc_tools_content_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.pc_tools_content_box h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.pc_tools_content_box p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pc_creatorsresources{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12rem;
+    width: 100%;
+}
+
+.pc_creatorsresources h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.pc_creatorsresources_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-gap: 4rem;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.pc_creatorsresources_content_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc_creatorsresources_content_box p{
+    margin-top: 3rem;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.pc_getstarted{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc_getstarted h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pc_getstarted_buttons{
+    display: flex;
+}
+
+.pc_getstarted_button:nth-child(1){
+    font-size: 0.9rem;
+    padding: 1.5rem 1.8rem;
+    border-radius: 2.5rem;
+    font-weight: 800;
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 253, 146);
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.pc_getstarted_button:nth-child(2){
+    font-size: 0.9rem;
+    padding: 1.5rem 1.8rem;
+    border-radius: 2.5rem;
+    font-weight: 800;
+    border: 2px solid rgb(85, 10, 169);
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.pc_getstarted_button:nth-child(2):hover{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 253, 146);
+}
+
+.pc_footer{
+    background-color: rgb(85, 10, 169);
+    color: rgb(255, 253, 146);
+    padding: 2rem 8rem 3rem 8rem;
+    margin-top: 9rem;
+}
+
+.pc_footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pc_footer_bottom_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pc_footer_bottom_left select{
+    padding: 1rem;
+    width: 250px;
+    border: 1px solid rgb(255, 253, 146);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 253, 146);
+    margin: 4rem 0;
+    cursor: pointer;
+}
+
+.pc_footer_bottom_left span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pc_footer_bottom_right{
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.pc_footer_bottom_right_column{
+    padding: 2rem;
+}
+
+.pc_footer_bottom_right_column ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pc_footer_bottom_right_column ul li{
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}

@@ -302,8 +302,6 @@ const HowToMakePins = () => {
                 </div>
                 <div className="htmp_perfect_right">
                     {perfectRightToggler(perfect.active)}
-                    {/* {() => changePerfectData()} */}
-                    {/* <PerfectRight/> */}
                 </div>
             </div>
             <div className="htmp_publish">
