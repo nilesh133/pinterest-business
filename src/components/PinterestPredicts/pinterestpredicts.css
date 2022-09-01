@@ -5,14 +5,14 @@
 }
 
 .pp_combinationTwo{
-    background-color: rgb(255, 246, 235);
-    color: rgb(0, 92, 98);
+    background-color: rgb(253, 255, 233);
+    color: rgb(0, 17, 38);
     transition: all 0.5s;
 }
 
 .pp_combinationThree{
     background-color: rgb(255, 228, 193);
-    color: rgb(0, 92, 98);
+    color: rgb(0, 17, 38);
     transition: all 0.5s;
 }
 
@@ -38,13 +38,13 @@
 }
 
 .pp_navbar_combinationTwo{
-    background-color: rgb(255, 246, 235);
-    color: rgb(0, 92, 98);
+    background-color: rgb(253, 255, 233);
+    color: rgb(0, 17, 38);
 }
 
 .pp_navbar_combinationThree{
     background-color: rgb(255, 228, 193);
-    color: rgb(0, 92, 98);
+    color: rgb(0, 17, 38);
 }
 
 .pp_navbar_combinationOne:hover{
@@ -53,12 +53,12 @@
 }
 
 .pp_navbar_combinationTwo:hover{
-    background-color: rgb(0, 92, 98);
-    color: rgb(255, 246, 235);
+    background-color: rgb(0, 17, 38);
+    color: rgb(253, 255, 233);
 }
 
 .pp_navbar_combinationThree:hover{
-    background-color: rgb(0, 92, 98);
+    background-color: rgb(0, 17, 38);
     color: rgb(255, 228, 193);
 }
 
@@ -77,7 +77,7 @@
 
 .pp_navbar_items p{
     margin: 0;
-    margin-right: 1.5rem;
+    margin-right: 0.8rem;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
@@ -97,11 +97,11 @@
 }
 
 .pp_navbar_login_combinationTwo{
-    border: 2px solid rgb(0, 92, 98);
+    border: 2px solid rgb(0, 17, 38);
 }
 
 .pp_navbar_login_combinationThree{
-    border: 2px solid rgb(0, 92, 98);
+    border: 2px solid rgb(0, 17, 38);
 }
 
 .pp_navbar:hover .pp_navbar_login_combinationOne{
@@ -110,8 +110,8 @@
 }
 
 .pp_navbar:hover .pp_navbar_login_combinationTwo{
-    color: rgb(255, 246, 235);
-    border: 2px solid rgb(255, 246, 235);
+    color: rgb(253, 255, 233);
+    border: 2px solid rgb(253, 255, 233);
 }
 
 .pp_navbar:hover .pp_navbar_login_combinationThree{
@@ -134,12 +134,12 @@
 }
 
 .pp_navbar_signup_combinationTwo{
-    background-color: rgb(0, 92, 98);
-    color: rgb(255, 246, 235);
+    background-color: rgb(0, 17, 38);
+    color: rgb(253, 255, 233);
 }
 
 .pp_navbar_signup_combinationThree{
-    background-color: rgb(0, 92, 98);
+    background-color: rgb(0, 17, 38);
     color: rgb(255, 228, 193);
 }
 
@@ -149,13 +149,13 @@
 }
 
 .pp_navbar:hover .pp_navbar_signup_combinationTwo{
-    background-color: rgb(255, 246, 235);
-    color: rgb(0, 92, 98);
+    background-color: rgb(253, 255, 233);
+    color: rgb(0, 17, 38);
 }
 
 .pp_navbar:hover .pp_navbar_signup_combinationThree{
     background-color: rgb(255, 228, 193);
-    color: rgb(0, 92, 98);
+    color: rgb(0, 17, 38);
 }
 
 .pp_navbar_dropbtn {
@@ -181,7 +181,7 @@
     top: 80%;
     left: 0;
     box-sizing: border-box;
-    padding-left: 43%;
+    padding-left: 46%;
     padding-bottom: 2rem;
 }
 
@@ -191,12 +191,12 @@
 }
 
 .pp_navbar_dropdown_content_combinationTwo{
-    background-color: rgb(0, 92, 98);
-    color: rgb(255, 246, 235);
+    background-color: rgb(0, 17, 38);
+    color: rgb(253, 255, 233);
 }
 
 .pp_navbar_dropdown_content_combinationThree{
-    background-color: rgb(0, 92, 98);
+    background-color: rgb(0, 17, 38);
     color: rgb(255, 228, 193);
 }
 
@@ -205,10 +205,10 @@
     text-decoration: none;
     text-underline-offset: 5px;
     display: block;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 500;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
 }
   
 .pp_navbar_dropdown_content p:hover {
@@ -217,4 +217,244 @@
   
 .pp_navbar_dropdown:hover .pp_navbar_dropdown_content {
     display: block;
+}
+
+.pp_hero{
+    margin-top: 12rem;
+}
+
+.pp_hero h1{
+    margin: 0;
+    font-size: 84px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pp_youtubevideo{
+    margin-top: 12rem;
+}
+
+.pp_trends{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pp_trends p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pp_trends_audience{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    font-size: 20px;
+}
+
+.pp_trends_content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    place-items: center;
+    margin-top: 7rem;
+}
+
+.pp_trends_content_box{
+    cursor: pointer;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pp_trends_content_box_heading{
+    position: relative;
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.pp_trends_content_box_heading::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 17, 38);
+    transition: all 0.3s;
+}
+
+.pp_trends_content_box:hover .pp_trends_content_box_heading::after{
+    width: 100%;
+}
+
+.pp_before{
+    margin-top: 12rem;
+}
+
+.pp_before h1{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.pp_before_para{
+    margin: 2rem 0;
+}
+
+.pp_before_para p{
+    font-size: 34px;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+}
+
+.pp_before h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.pp_getstarted{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pp_getstarted h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pp_getstarted_buttons{
+    display: flex;
+}
+
+.pp_getstarted_button{
+    font-size: 0.9rem;
+    padding: 1.5rem 1.8rem;
+    border-radius: 2.5rem;
+    font-weight: 800;
+    border: 2px solid rgb(246, 255, 130);
+    color: rgb(246, 255, 130);
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    margin-right: 1rem;
+    transition: all 0.5s;
+}
+
+.pp_getstarted_button:hover{
+    background-color: rgb(246, 255, 130);
+    color: rgb(0, 17, 38);
+}
+
+.pp_footer{
+    background-color: rgb(246, 255, 130);
+    color: rgb(0, 17, 38);
+    padding: 2rem 8rem 3rem 8rem;
+    margin-top: 9rem;
+}
+
+.pp_footer_collapse{
+    color: rgb(0, 17, 38);
+    border-bottom: 0.2px solid rgb(0, 17, 38);
+    margin-bottom: 2rem;
+}
+
+.pp_footer_collapse .nextui-collapse-title {
+    color: rgb(0, 17, 38) !important;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pp_footer_collapse_contentcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+}
+
+.pp_footer_collapse_content{
+    width: 28%;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+.pp_footer_collapse_content span{
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    color: rgb(0, 17, 38);
+    border: 1px solid rgb(0, 17, 38);
+}
+
+.pp_footer_collapse_content p{
+    margin: 0;
+    color: rgb(0, 17, 38);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.pp_footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pp_footer_bottom_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pp_footer_bottom_left select{
+    padding: 1rem;
+    width: 250px;
+    border: 1px solid rgb(0, 17, 38);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 17, 38);
+    margin: 4rem 0;
+    cursor: pointer;
+}
+
+.pp_footer_bottom_left span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pp_footer_bottom_right{
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.pp_footer_bottom_right_column{
+    padding: 2rem;
+}
+
+.pp_footer_bottom_right_column ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pp_footer_bottom_right_column ul li{
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 500;
 }

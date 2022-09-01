@@ -147,7 +147,6 @@ const Home = () => {
                 </div> */}
 
             </div>
-
             <div className="action">
                 <h1>Actions speak louder than likes</h1>
                 <div>

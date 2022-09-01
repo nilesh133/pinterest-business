@@ -327,10 +327,10 @@ const GettingStarted = () => {
             <div className="gs_getstarted">
                 <h1>Get started</h1>
                 <div className="gs_getstarted_buttons">
-                    <div className="gs_getstarted_button">
+                    <div className="gs_getstarted_button" onClick={() => navigate("/create")}>
                         Create account
                     </div>
-                    <div className="gs_getstarted_button">
+                    <div className="gs_getstarted_button" onClick={() => navigate("/how-to-make-pins")}>
                         Learn about Pins
                     </div>
                 </div>

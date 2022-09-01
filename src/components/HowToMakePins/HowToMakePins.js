@@ -114,21 +114,6 @@ const HowToMakePins = () => {
         }
     ]
 
-    // const changePerfectData = (index) => {
-    //     setPerfect({
-    //         para: perfectData[index].para,
-    //         active: perfectData[index].active
-    //     })
-    //     switch (perfect.active) {
-    //         case "Standard":
-    //             return <PerfectRightOne />;
-    //         case "Video":
-    //             return <PerfectRightTwo />;
-    //         default:
-    //     }
-    //     console.log(perfect.active)
-    // }
-
     const perfectRightToggler = (active) => {
         switch (active) {
             case "Standard":
@@ -157,7 +142,7 @@ const HowToMakePins = () => {
                 <div className="htmp_navbar_logo">Business</div>
                 <div className="htmp_navbar_items">
                     <div class="htmp_navbar_dropdown">
-                        <p className={classNames("htmp_navbar_dropbtn", `${path === "/getting-started" ? "navbar_active" : ""}`)}>Why pinterest?</p>
+                        <p className="htmp_navbar_dropbtn">Why pinterest?</p>
                         <div
                             className={classNames(
                                 `htmp_navbar_dropdown_content_${combinationNumber}`,
@@ -167,7 +152,7 @@ const HowToMakePins = () => {
                             <p onClick={() => navigate("/how-pinterest-works")}>
                                 How pinterest works
                             </p>
-                            <p onClick={() => navigate("/getting-started")} className={path === "/getting-started" ? "navbar_active" : ""}>
+                            <p onClick={() => navigate("/getting-started")}>
                                 Getting started
                             </p>
                             <p onClick={() => navigate("/pinterest-audience")}>
@@ -177,7 +162,7 @@ const HowToMakePins = () => {
                         </div>
                     </div>
                     <div class="htmp_navbar_dropdown">
-                        <p className="htmp_navbar_dropbtn">Create content</p>
+                        <p className={classNames("htmp_navbar_dropbtn", `${path === "/how-to-make-pins" ? "navbar_active" : ""}`)}>Create content</p>
                         <div
                             className={classNames(
                                 `htmp_navbar_dropdown_content_${combinationNumber}`,
@@ -187,7 +172,7 @@ const HowToMakePins = () => {
                             <p onClick={() => navigate("/creators")}>
                                 Pinterest for creators
                             </p>
-                            <p onClick={() => navigate("/how-to-make-pins")}>
+                            <p onClick={() => navigate("/how-to-make-pins")} className={path === "/how-to-make-pins" ? "navbar_active" : ""}>
                                 Making pins: Tips and Tricks
                             </p>
                             <p onClick={() => navigate("/creative-best-practices")}>
@@ -296,7 +281,7 @@ const HowToMakePins = () => {
                     <div className="htmp_perfect_left_para" data-aos="fade-up">
                         {perfect.para}
                     </div>
-                    <div className="htmp_perfect_left_navigation">
+                    <div className="htmp_perfect_left_navigation" onClick={() => navigate("/creative-best-practices")}>
                         See best practices
                     </div>
                 </div>
@@ -416,7 +401,7 @@ const HowToMakePins = () => {
             <div className="htmp_create">
                 <h1>Create Pins that get noticed</h1>
                 <div className="htmp_create_buttons">
-                    <div className="htmp_create_button">
+                    <div className="htmp_create_button" onClick={() => navigate("/creative-best-practices")}>
                         See best practices
                     </div>
                     <div className="htmp_create_button">

@@ -306,7 +306,7 @@ const PinterestAudience = () => {
                     <div className="pa_getstarted_button">
                         Create ad
                     </div>
-                    <div className="pa_getstarted_button">
+                    <div className="pa_getstarted_button" onClick={() => navigate("/create")}>
                         Create account
                     </div>
                 </div>

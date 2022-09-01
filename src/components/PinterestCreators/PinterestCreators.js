@@ -128,7 +128,7 @@ const PinterestCreators = () => {
                 <div className="pc_navbar_logo">Business</div>
                 <div className="pc_navbar_items">
                     <div class="pc_navbar_dropdown">
-                        <p className={classNames("pc_navbar_dropbtn", `${path === "/getting-started" ? "navbar_active" : ""}`)}>Why pinterest?</p>
+                        <p class="pc_navbar_dropbtn">Why pinterest?</p>
                         <div
                             className={classNames(
                                 `pc_navbar_dropdown_content_${combinationNumber}`,
@@ -138,7 +138,7 @@ const PinterestCreators = () => {
                             <p onClick={() => navigate("/how-pinterest-works")}>
                                 How pinterest works
                             </p>
-                            <p onClick={() => navigate("/getting-started")} className={path === "/getting-started" ? "navbar_active" : ""}>
+                            <p onClick={() => navigate("/getting-started")}>
                                 Getting started
                             </p>
                             <p onClick={() => navigate("/pinterest-audience")}>
@@ -148,14 +148,14 @@ const PinterestCreators = () => {
                         </div>
                     </div>
                     <div class="pc_navbar_dropdown">
-                        <p className="pc_navbar_dropbtn">Create content</p>
+                        <p className={classNames("pc_navbar_dropbtn", `${path === "/creators" ? "navbar_active" : ""}`)}>Create content</p>
                         <div
                             className={classNames(
                                 `pc_navbar_dropdown_content_${combinationNumber}`,
                                 "pc_navbar_dropdown_content"
                             )}
                         >
-                            <p onClick={() => navigate("/creators")}>
+                            <p onClick={() => navigate("/creators")} className={path === "/creators" ? "navbar_active" : ""}>
                                 Pinterest for creators
                             </p>
                             <p onClick={() => navigate("/how-to-make-pins")}>
@@ -166,7 +166,7 @@ const PinterestCreators = () => {
                             </p>
                         </div>
                     </div>
-                    <div class="pc_navbar_dropdown">
+                    <div className="pc_navbar_dropdown">
                         <p className="pc_navbar_dropbtn">Insights</p>
                         <div
                             className={classNames(
@@ -226,7 +226,7 @@ const PinterestCreators = () => {
                         <p>authentic ideas—without the pressure to be perfect.</p>
 
                     </div>
-                    <div className="pc_hero_left_button">
+                    <div className="pc_hero_left_button" onClick={() => navigate("/create")}>
                         Create account
                     </div>
                 </div>
@@ -376,7 +376,7 @@ const PinterestCreators = () => {
                     <div className="pc_getstarted_button">
                         Create account
                     </div>
-                    <div className="pc_getstarted_button">
+                    <div className="pc_getstarted_button" onClick={() => navigate("/create")}>
                         Create idea pin
                     </div>
                 </div>

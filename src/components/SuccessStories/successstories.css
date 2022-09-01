@@ -60,7 +60,7 @@
 
 .success_navbar_items p{
     margin: 0;
-    margin-right: 1.5rem;
+    margin-right: 0.8rem;
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
@@ -145,7 +145,7 @@
     top: 80%;
     left: 0;
     box-sizing: border-box;
-    padding-left: 43%;
+    padding-left: 46%;
     padding-bottom: 2rem;
 }
 
@@ -164,10 +164,10 @@
     text-decoration: none;
     text-underline-offset: 5px;
     display: block;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 500;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
 }
   
 .success_navbar_dropdown_content p:hover {

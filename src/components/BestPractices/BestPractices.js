@@ -222,7 +222,7 @@ const BestPractices = () => {
                         </div>
                     </div>
                     <div class="bp_navbar_dropdown">
-                        <p className="bp_navbar_dropbtn">Create content</p>
+                        <p className={classNames("ar_navbar_dropbtn", `${path === "/creative-best-practices" ? "navbar_active" : ""}`)}>Create content</p>
                         <div
                             className={classNames(
                                 `bp_navbar_dropdown_content_${combinationNumber}`,
@@ -235,7 +235,7 @@ const BestPractices = () => {
                             <p onClick={() => navigate("/how-to-make-pins")}>
                                 Making pins: Tips and Tricks
                             </p>
-                            <p onClick={() => navigate("/creative-best-practices")}>
+                            <p onClick={() => navigate("/creative-best-practices")} className={path === "/creative-best-practices" ? "navbar_active" : ""}>
                                 Best practices
                             </p>
                         </div>
@@ -254,7 +254,7 @@ const BestPractices = () => {
                         </div>
                     </div>
                     <div class="bp_navbar_dropdown">
-                        <p className={classNames("ar_navbar_dropbtn", `${path === "/guides-and-education" ? "navbar_active" : ""}`)}>Resources</p>
+                        <p className="bp_navbar_dropbtn">Resources</p>
                         <div
                             className={classNames(
                                 `bp_navbar_dropdown_content_${combinationNumber}`,
@@ -267,7 +267,7 @@ const BestPractices = () => {
                             <p onClick={() => navigate("/agency-resources")}>
                                 Agency Resources
                             </p>
-                            <p className={path === "/guides-and-education" ? "navbar_active" : ""} onClick={() => navigate("/guides-and-education")}>
+                            <p onClick={() => navigate("/guides-and-education")}>
                                 Guides and Education
                             </p>
                         </div>
